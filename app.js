@@ -64,6 +64,7 @@
     childProfileGrid: document.getElementById("child-profile-grid"),
     portfolioGrid: document.getElementById("portfolio-grid"),
     interviewLensGrid: document.getElementById("interview-lens-grid"),
+    coreInterviewGrid: document.getElementById("core-interview-grid"),
     strategyAxes: document.getElementById("strategy-axes"),
     findingsList: document.getElementById("findings-list"),
     timelineList: document.getElementById("timeline-list"),
@@ -418,6 +419,27 @@
         <p>${item.detail}</p>
       `;
       els.interviewLensGrid.appendChild(card);
+    });
+  }
+
+  function renderCoreInterviewPlan() {
+    if (!els.coreInterviewGrid || !research.coreInterviewPlan) return;
+    els.coreInterviewGrid.innerHTML = "";
+    research.coreInterviewPlan.forEach((item) => {
+      const card = document.createElement("article");
+      card.className = "agenda-card";
+      card.innerHTML = `
+        <p class="section-kicker">${item.routeType}</p>
+        <h3>${item.schoolName}</h3>
+        <div class="phase-three-meta">
+          <p><strong>學生要練：</strong>${item.studentFocus}</p>
+          <p><strong>家長要講：</strong>${item.parentFocus}</p>
+          <p><strong>女兒優勢：</strong>${item.daughterAdvantage}</p>
+          <p><strong>補強位：</strong>${item.strengthen}</p>
+        </div>
+        <p><strong>一句帶走：</strong>${item.takeAway}</p>
+      `;
+      els.coreInterviewGrid.appendChild(card);
     });
   }
 
@@ -789,6 +811,7 @@
   renderChildProfile();
   renderPortfolioChecklist();
   renderInterviewLens();
+  renderCoreInterviewPlan();
   initFilters();
   bindFilters();
   renderPriorityLists();
