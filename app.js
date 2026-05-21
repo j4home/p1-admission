@@ -66,6 +66,7 @@
     interviewLensGrid: document.getElementById("interview-lens-grid"),
     coreInterviewGrid: document.getElementById("core-interview-grid"),
     weeklyPracticeGrid: document.getElementById("weekly-practice-grid"),
+    homePracticeGrid: document.getElementById("home-practice-grid"),
     strategyAxes: document.getElementById("strategy-axes"),
     findingsList: document.getElementById("findings-list"),
     timelineList: document.getElementById("timeline-list"),
@@ -460,6 +461,22 @@
     });
   }
 
+  function renderHomePracticeActivities() {
+    if (!els.homePracticeGrid || !research.homePracticeActivities) return;
+    els.homePracticeGrid.innerHTML = "";
+    research.homePracticeActivities.forEach((item) => {
+      const card = document.createElement("article");
+      card.className = "agenda-card";
+      card.innerHTML = `
+        <p class="section-kicker">${item.schoolGroup}</p>
+        <h3>${item.title}</h3>
+        <p><strong>做法：</strong>${item.detail}</p>
+        <p><strong>目標：</strong>${item.goal}</p>
+      `;
+      els.homePracticeGrid.appendChild(card);
+    });
+  }
+
   function renderChildProfile() {
     if (!els.childProfileGrid || !research.familyContext?.childProfile) return;
     els.childProfileGrid.innerHTML = "";
@@ -830,6 +847,7 @@
   renderInterviewLens();
   renderCoreInterviewPlan();
   renderWeeklyPracticePlan();
+  renderHomePracticeActivities();
   initFilters();
   bindFilters();
   renderPriorityLists();
