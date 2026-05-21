@@ -54,6 +54,7 @@
     workPlanGrid: document.getElementById("workplan-grid"),
     admissionsGrid: document.getElementById("admissions-grid"),
     phaseThreeGrid: document.getElementById("phase-three-grid"),
+    phaseFourGrid: document.getElementById("phase-four-grid"),
     strategyAxes: document.getElementById("strategy-axes"),
     findingsList: document.getElementById("findings-list"),
     timelineList: document.getElementById("timeline-list"),
@@ -253,6 +254,27 @@
         <p><strong>現階段最值得追甚麼：</strong>${item.nextFocus}</p>
       `;
       els.phaseThreeGrid.appendChild(card);
+    });
+  }
+
+  function renderPhaseFourComparison() {
+    if (!els.phaseFourGrid || !research.phaseFourComparison) return;
+    els.phaseFourGrid.innerHTML = "";
+
+    research.phaseFourComparison.forEach((item) => {
+      const card = document.createElement("article");
+      card.className = "agenda-card";
+      card.innerHTML = `
+        <p class="section-kicker">${item.routeType}</p>
+        <h3>${item.schoolName}</h3>
+        <div class="phase-three-meta">
+          <p><strong>面試感覺：</strong>${item.interviewFeel}</p>
+          <p><strong>家長投入文化：</strong>${item.parentInvolvement}</p>
+          <p><strong>交通/校車：</strong>${item.transportFeel}</p>
+        </div>
+        <p><strong>最要小心：</strong>${item.caution}</p>
+      `;
+      els.phaseFourGrid.appendChild(card);
     });
   }
 
@@ -603,6 +625,7 @@
   renderWorkPlan();
   renderAdmissionsTracker();
   renderPhaseThreeComparison();
+  renderPhaseFourComparison();
   initFilters();
   bindFilters();
   renderPriorityLists();

@@ -236,6 +236,40 @@ window.__PROJECT_RESEARCH__ = {
       nextFocus: "project / 功課結構、家長文化、與 DGS 承接的真實體感。"
     }
   ],
+  phaseFourComparison: [
+    {
+      schoolName: "保良局陳守仁小學",
+      routeType: "本地直資強英語",
+      interviewFeel: "偏重雙語表達、互動、遊戲任務與即場反應。",
+      parentInvolvement: "PTA 成熟，有家長義工、講座、well-being 活動與家長校董參與。",
+      transportFeel: "近家優勢極大，且有完整校車制度；對你們來說校車不是核心但屬加分。",
+      caution: "熱門學校的比較氛圍容易放大焦慮。"
+    },
+    {
+      schoolName: "優才(楊殷有娣)書院",
+      routeType: "一條龍直資 / inquiry / 資優",
+      interviewFeel: "更像多階段配對，不只是一次短面試。",
+      parentInvolvement: "家校協作、開放教室、家聯組訊號強，家長理解理念很重要。",
+      transportFeel: "旺角校舍對你們非常近；本輪未見清晰公開校車資料。",
+      caution: "若只愛它的光環、不接受其節奏，之後容易失配。"
+    },
+    {
+      schoolName: "保良局蔡繼有學校",
+      routeType: "私立獨立 / 雙語 / IGCSE + IBDP",
+      interviewFeel: "大概率偏語言、表達、整體氣質，但最新官方細節仍不足。",
+      parentInvolvement: "家長被視為 learning community 一部分，不太像純消費型學校關係。",
+      transportFeel: "地點可接受，但校車/保姆車一定要入 shortlist 後再逐校核實。",
+      caution: "不要只被『IB』或『happy school』標籤吸引。"
+    },
+    {
+      schoolName: "拔萃女小學",
+      routeType: "傳統女校精英私校",
+      interviewFeel: "首輪重聽說與思維，二輪更看態度、行為、溝通和整體發展。",
+      parentInvolvement: "PTA 歷史久、分工細、組織化程度高，家長網絡很深。",
+      transportFeel: "校巴制度成熟，但同時反映家長支援與學校運作都高度制度化。",
+      caution: "真正的壓力未必在面試，而可能在後續家長文化。"
+    }
+  ],
   phaseOneShortlist: [
     {
       schoolName: "保良局陳守仁小學",
