@@ -62,6 +62,8 @@
     childScenariosGrid: document.getElementById("child-scenarios-grid"),
     openDayGrid: document.getElementById("open-day-grid"),
     childProfileGrid: document.getElementById("child-profile-grid"),
+    portfolioGrid: document.getElementById("portfolio-grid"),
+    interviewLensGrid: document.getElementById("interview-lens-grid"),
     strategyAxes: document.getElementById("strategy-axes"),
     findingsList: document.getElementById("findings-list"),
     timelineList: document.getElementById("timeline-list"),
@@ -388,6 +390,34 @@
         <p>${item.detail}</p>
       `;
       els.openDayGrid.appendChild(card);
+    });
+  }
+
+  function renderPortfolioChecklist() {
+    if (!els.portfolioGrid || !research.portfolioPrepChecklist) return;
+    els.portfolioGrid.innerHTML = "";
+    research.portfolioPrepChecklist.forEach((item) => {
+      const card = document.createElement("article");
+      card.className = "agenda-card";
+      card.innerHTML = `
+        <h3>${item.title}</h3>
+        <p>${item.detail}</p>
+      `;
+      els.portfolioGrid.appendChild(card);
+    });
+  }
+
+  function renderInterviewLens() {
+    if (!els.interviewLensGrid || !research.interviewSkillLens) return;
+    els.interviewLensGrid.innerHTML = "";
+    research.interviewSkillLens.forEach((item) => {
+      const card = document.createElement("article");
+      card.className = "agenda-card";
+      card.innerHTML = `
+        <h3>${item.title}</h3>
+        <p>${item.detail}</p>
+      `;
+      els.interviewLensGrid.appendChild(card);
     });
   }
 
@@ -757,6 +787,8 @@
   renderChildScenarios();
   renderOpenDayChecklist();
   renderChildProfile();
+  renderPortfolioChecklist();
+  renderInterviewLens();
   initFilters();
   bindFilters();
   renderPriorityLists();
