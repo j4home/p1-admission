@@ -65,6 +65,7 @@
     portfolioGrid: document.getElementById("portfolio-grid"),
     interviewLensGrid: document.getElementById("interview-lens-grid"),
     coreInterviewGrid: document.getElementById("core-interview-grid"),
+    weeklyPracticeGrid: document.getElementById("weekly-practice-grid"),
     strategyAxes: document.getElementById("strategy-axes"),
     findingsList: document.getElementById("findings-list"),
     timelineList: document.getElementById("timeline-list"),
@@ -443,6 +444,22 @@
     });
   }
 
+  function renderWeeklyPracticePlan() {
+    if (!els.weeklyPracticeGrid || !research.weeklyPracticePlan) return;
+    els.weeklyPracticeGrid.innerHTML = "";
+    research.weeklyPracticePlan.forEach((item) => {
+      const card = document.createElement("article");
+      card.className = "agenda-card";
+      card.innerHTML = `
+        <p class="section-kicker">${item.schoolName} · ${item.week}</p>
+        <h3>${item.focus}</h3>
+        <p><strong>家長怎樣陪：</strong>${item.parentRole}</p>
+        <p><strong>進步訊號：</strong>${item.progressSignal}</p>
+      `;
+      els.weeklyPracticeGrid.appendChild(card);
+    });
+  }
+
   function renderChildProfile() {
     if (!els.childProfileGrid || !research.familyContext?.childProfile) return;
     els.childProfileGrid.innerHTML = "";
@@ -812,6 +829,7 @@
   renderPortfolioChecklist();
   renderInterviewLens();
   renderCoreInterviewPlan();
+  renderWeeklyPracticePlan();
   initFilters();
   bindFilters();
   renderPriorityLists();

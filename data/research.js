@@ -542,6 +542,92 @@ window.__PROJECT_RESEARCH__ = {
       takeAway: "這間最值得先練『語言切換 + 文化匹配 + 全人輪廓』。"
     }
   ],
+  weeklyPracticePlan: [
+    {
+      schoolName: "保良局陳守仁小學",
+      week: "第 1 週",
+      focus: "雙語自我介紹 + 基本互動",
+      parentRole: "每天用英文和廣東話各做一次簡短對答，提醒她先聽問題，再答。",
+      progressSignal: "能自然回答，不急、不搶，語氣穩定。"
+    },
+    {
+      schoolName: "保良局陳守仁小學",
+      week: "第 2 週",
+      focus: "聽指令遊戲 + 小組輪候",
+      parentRole: "用簡單遊戲練她按步驟做事，例如記住兩至三個指令、輪流完成任務。",
+      progressSignal: "能聽完整規則才開始，不因太興奮而搶先。"
+    },
+    {
+      schoolName: "保良局陳守仁小學",
+      week: "第 3 週",
+      focus: "記憶 / 配對 / 專注類活動",
+      parentRole: "玩記憶配對、找不同、排序遊戲，觀察她在計時下是否仍然穩定。",
+      progressSignal: "出錯後不急躁，能重新集中。"
+    },
+    {
+      schoolName: "保良局陳守仁小學",
+      week: "第 4 週",
+      focus: "模擬遊戲型面試",
+      parentRole: "把英文提問、廣東話互動、記憶遊戲和輪候任務串成 10-15 分鐘模擬。",
+      progressSignal: "能在完整流程中維持禮貌、秩序和自然表達。"
+    },
+    {
+      schoolName: "優才(楊殷有娣)書院",
+      week: "第 1 週",
+      focus: "閱讀後表達想法",
+      parentRole: "一起讀故事後問『你最喜歡哪部分？為甚麼？如果重來會怎樣改？』",
+      progressSignal: "不只覆述內容，而是能表達原因和個人看法。"
+    },
+    {
+      schoolName: "優才(楊殷有娣)書院",
+      week: "第 2 週",
+      focus: "提問能力 + 思考延伸",
+      parentRole: "鼓勵她每次閱讀或觀察後主動提出 1 至 2 個問題，再一起找答案。",
+      progressSignal: "問題愈來愈具體，不只是『點解』，而是有方向的提問。"
+    },
+    {
+      schoolName: "優才(楊殷有娣)書院",
+      week: "第 3 週",
+      focus: "開放式任務中的條理表達",
+      parentRole: "給她簡單任務如『設計生日活動』『怎樣改善圖畫』，引導她按次序說想法。",
+      progressSignal: "能先講重點，再講原因，不會太跳躍。"
+    },
+    {
+      schoolName: "優才(楊殷有娣)書院",
+      week: "第 4 週",
+      focus: "學生 + 家長配對模擬",
+      parentRole: "家長練講教育理念，孩子同時做閱讀/表達任務，模擬雙線準備。",
+      progressSignal: "孩子和家長的表達方向一致，不各說各話。"
+    },
+    {
+      schoolName: "保良局蔡繼有學校",
+      week: "第 1 週",
+      focus: "英語 / 中文切換表達",
+      parentRole: "同一生活主題分別用英文和中文提問，例如最喜歡的書、活動、畫畫內容。",
+      progressSignal: "切換語言時仍然自然，不需要太多停頓。"
+    },
+    {
+      schoolName: "保良局蔡繼有學校",
+      week: "第 2 週",
+      focus: "閱讀感 + 開放式思考",
+      parentRole: "讀故事後問價值觀和想像問題，例如『你想做故事中哪個角色？』『如果換你會怎樣做？』",
+      progressSignal: "答案不只正確，而且能顯示思考深度和同理心。"
+    },
+    {
+      schoolName: "保良局蔡繼有學校",
+      week: "第 3 週",
+      focus: "全人輪廓展示",
+      parentRole: "讓她用簡單句子介紹自己喜歡的音樂、畫畫、游泳或體操，建立自然自我介紹素材。",
+      progressSignal: "能開心而不誇張地展示自己，不用背稿。"
+    },
+    {
+      schoolName: "保良局蔡繼有學校",
+      week: "第 4 週",
+      focus: "文化匹配模擬",
+      parentRole: "家長練講雙語、閱讀和全人教育理念，孩子做語言切換與生活表達練習。",
+      progressSignal: "家長與孩子呈現出同一種教育氣質，而不是分開兩套說法。"
+    }
+  ],
   phaseOneShortlist: [
     {
       schoolName: "保良局陳守仁小學",
