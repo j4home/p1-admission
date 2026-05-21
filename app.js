@@ -272,6 +272,7 @@
         <p class="section-kicker">${item.routeType}</p>
         <h3>${item.schoolName}</h3>
         <p><strong>為何值得看：</strong>${item.whyItMatters}</p>
+        ${item.admissionsSnapshot ? `<p style="margin-top:12px;"><strong>申請節奏：</strong>${item.admissionsSnapshot}</p>` : ""}
         <div class="metric-list">
           ${item.keyPoints.map((point) => `<div class="metric-item"><span>${point}</span></div>`).join("")}
         </div>

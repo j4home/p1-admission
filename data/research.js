@@ -90,12 +90,62 @@ window.__PROJECT_RESEARCH__ = {
   ],
   focusProfiles: [
     {
+      slug: "tsl",
+      schoolName: "保良局陳守仁小學",
+      englishName: "Po Leung Kuk Camões Tan Siu Lin Primary School",
+      routeType: "直資小學 / 近家 / 強英語",
+      whyItMatters:
+        "這是你們個案中非常重要的現實主戰場學校。它不是抽象的理想型，而是近家、英語強、家長關注度高，而且很可能真的會報。",
+      admissionsSnapshot:
+        "官網已列出 2027/28 P.1 Admission 大節點：2026-07-10 公布詳細招生資訊、2026-10 First Interview；更細節仍待後續公布。",
+      keyPoints: [
+        "按本專案資料庫，距離窩打老道 8 號粗略直線距離約 0.56 km。",
+        "官網自述為 co-educational DSS English primary school，英語語境訊號明顯。",
+        "屬本地直資主流賽道，不是一條龍，升中結果需要專門拆解。",
+        "若你們重視近距離 + 強英語 + 現實可行性，它幾乎必須研究。"
+      ],
+      parentLens:
+        "對家長來說，它的吸引力在於近、英語強、名氣高、日常使用價值高；風險則在於熱門學校常伴隨較高競爭感與家長期望。",
+      schoolLens:
+        "官方強調多元、全人、成長型思維與 rich language environment，定位不像純傳統操練名校，而是帶有明顯校本發展色彩的本地直資英小。",
+      caution:
+        "這類學校很容易因為『近 + 熱門 + 英語強』而被快速神化，但真正要補的是功課壓力、升中去向與家長圈文化。",
+      source:
+        "教育局學校位置資料集；學校官網 Principal's Message / P.1 Admission"
+    },
+    {
+      slug: "gt",
+      schoolName: "優才(楊殷有娣)書院",
+      englishName: "G.T. (Ellen Yeung) College",
+      routeType: "直資小學 / 一條龍 / 資優與 inquiry 取向",
+      whyItMatters:
+        "它不是純傳統操練名校，也不是純國際學校，而是一條有自己教育哲學、而且申請節奏極清楚的近家一條龍直資路線。",
+      admissionsSnapshot:
+        "2027/28 小一時間表已公布：2026-05-09 至 2026-06-08 報名、2026-06 末至 2026-07 初第一階段面見、2026-09 公布第一階段結果、十月下旬公布最終結果。",
+      keyPoints: [
+        "按本專案資料庫，距離窩打老道 8 號粗略直線距離約 0.63 km。",
+        "小學部官網公開完整申請時間表，是目前第一批中資訊最齊的一間。",
+        "校本課程強調 inquiry-based learning、閱讀、第三語言與資優架構。",
+        "中學部有 DSE / IB 長線路徑，官方 2023-2024 IB 平均分為 38.7。"
+      ],
+      parentLens:
+        "對家長來說，最大價值在於近家、一條龍、理念清楚、時間表清楚；挑戰在於你要確認自己喜歡的是『理念本身』，還是只喜歡它的光環。",
+      schoolLens:
+        "學校明顯想建立一套 student-centered、talent-based、longitudinal 的培育模型，而不是單純做成傳統分數導向名校。",
+      caution:
+        "優才的吸引點很多，但也因此特別容易讓人忽略孩子匹配度；之後一定要補真實家長口碑和低小壓力感。",
+      source:
+        "小學部 2027/28 小一入學頁、時間表、校本課程頁；中學部官方 IB Results"
+    },
+    {
       slug: "cky",
       schoolName: "保良局蔡繼有學校",
       englishName: "Po Leung Kuk Choi Kai Yau School",
       routeType: "私立獨立學校 / 一條龍 / 高度雙語 / IGCSE + IBDP",
       whyItMatters:
         "這是一類很有代表性的學校：它不是單純『私校 + 英文』，而是把雙語、全人教育與國際升學路線整合成完整產品。",
+      admissionsSnapshot:
+        "官網目前見到 Admissions Update 訊號，但本輪仍未見完整 Year 1 申請時間表；屬高研究價值但仍需持續追蹤的一間。",
       keyPoints: [
         "學制為 Year 1 至 Year 12 一條龍，後段接 IGCSE 及 IBDP。",
         "低年級以讀本取代單一本教材，重閱讀與語境，不走傳統密集默書排名路線。",
@@ -110,6 +160,30 @@ window.__PROJECT_RESEARCH__ = {
         "這類學校不能只看『IB 成績』；還要看你是否真心認同其教育哲學，以及孩子能否在沒有傳統排名驅動下持續成長。",
       source:
         "家長提供 Google Doc 研究摘要（已下載到本地 source_google_doc.txt）"
+    },
+    {
+      slug: "dgjs",
+      schoolName: "拔萃女小學",
+      englishName: "Diocesan Girls' Junior School",
+      routeType: "一般私立小學 / 女校 / 傳統精英 benchmark",
+      whyItMatters:
+        "對女兒個案來說，它比男校 benchmark 更直接，能幫你們測試自己究竟是否真的喜歡傳統精英女校文化。",
+      admissionsSnapshot:
+        "2026/27 小一申請安排清晰：2025-08-15 至 2025-08-26 報名、2025-10 首輪面試、2025-11 中起第二輪面試、2025-12 下旬 offering of places、2026-01 註冊。",
+      keyPoints: [
+        "女校、地點相對近、申請節奏成熟，是女兒個案的重要 benchmark。",
+        "官網清楚列出名額 144、年齡範圍及申請程序。",
+        "FAQ 顯示第二輪期間家長可能獲邀與校方會面。",
+        "它的研究價值不只在名氣，而在於其文化是否真適合你們家庭。"
+      ],
+      parentLens:
+        "對家長來說，這是『傳統女校英語名校文化』的測試點。若你們喜歡這種風格，它會很吸引；若不喜歡，研究後通常也會很清楚知道原因。",
+      schoolLens:
+        "學校在招生上非常成熟，流程、時間與條件都清楚，顯示其制度化和選才節奏都很穩定。",
+      caution:
+        "不能只因品牌就當作必報。之後要重點補：功課與壓力、家長圈文化、以及對女兒性格是否合適。",
+      source:
+        "DGJS Application for Primary 1 / FAQ / Admission System"
     }
   ],
   phaseOneShortlist: [
