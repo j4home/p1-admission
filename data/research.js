@@ -342,6 +342,36 @@ window.__PROJECT_RESEARCH__ = {
       currentRole: "保留但更像文化對照組，而不一定是最核心那一間。"
     }
   ],
+  shortlistDecisionMatrix: [
+    {
+      tier: "核心申請",
+      schoolName: "保良局陳守仁小學",
+      decision: "應優先準備與持續追蹤",
+      why: "近家、英語強、面試風格和她的外向表達力對焦，而且日常可持續性最高。",
+      watchout: "熱門學校比較氣氛和低小節奏仍要觀察。"
+    },
+    {
+      tier: "核心申請",
+      schoolName: "優才(楊殷有娣)書院",
+      decision: "應與陳守仁並列核心準備",
+      why: "她喜歡思考、閱讀、表達和多元活動，與 inquiry / 一條龍路線很合拍。",
+      watchout: "要確認家庭是否真喜歡其長線節奏和理念。"
+    },
+    {
+      tier: "高質第二核心",
+      schoolName: "保良局蔡繼有學校",
+      decision: "值得認真研究並保留在主名單",
+      why: "她的英文、閱讀、音樂、藝術和多元活動特質，與雙語國際化文化相當對焦。",
+      watchout: "成本高，且要確定你們是真心認同其教育哲學。"
+    },
+    {
+      tier: "文化對照",
+      schoolName: "拔萃女小學",
+      decision: "保留，但更適合作文化與風格對照",
+      why: "她面試表達未必吃虧，但這間未必最能放大她整體多元優勢。",
+      watchout: "傳統精英和家長文化是否適合她，比名氣更關鍵。"
+    }
+  ],
   childScenarioComparison: [
     {
       scenario: "慢熱、敏感、要安全感先發揮",

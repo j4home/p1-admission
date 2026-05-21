@@ -53,6 +53,7 @@
     agendaGrid: document.getElementById("agenda-grid"),
     workPlanGrid: document.getElementById("workplan-grid"),
     admissionsGrid: document.getElementById("admissions-grid"),
+    shortlistMatrixGrid: document.getElementById("shortlist-matrix-grid"),
     phaseThreeGrid: document.getElementById("phase-three-grid"),
     phaseFourGrid: document.getElementById("phase-four-grid"),
     phaseFiveGrid: document.getElementById("phase-five-grid"),
@@ -223,8 +224,9 @@
 
     research.admissionsTracker.forEach((item) => {
       const card = document.createElement("article");
-      card.className = "agenda-card";
+      card.className = "timeline-card";
       card.innerHTML = `
+        <div class="timeline-dot"></div>
         <div class="card-headline">
           <p class="section-kicker">${item.scope}</p>
           <span class="status-pill ${item.statusClass || "status-neutral"}">${item.statusLabel}</span>
@@ -236,6 +238,23 @@
         <p class="source-footnote"><small><a href="${item.sourceUrl}" target="_blank" rel="noreferrer">${item.sourceLabel}</a></small></p>
       `;
       els.admissionsGrid.appendChild(card);
+    });
+  }
+
+  function renderShortlistMatrix() {
+    if (!els.shortlistMatrixGrid || !research.shortlistDecisionMatrix) return;
+    els.shortlistMatrixGrid.innerHTML = "";
+    research.shortlistDecisionMatrix.forEach((item) => {
+      const card = document.createElement("article");
+      card.className = "agenda-card";
+      card.innerHTML = `
+        <p class="section-kicker">${item.tier}</p>
+        <h3>${item.schoolName}</h3>
+        <p><strong>現階段決定：</strong>${item.decision}</p>
+        <p><strong>原因：</strong>${item.why}</p>
+        <p><strong>要留意：</strong>${item.watchout}</p>
+      `;
+      els.shortlistMatrixGrid.appendChild(card);
     });
   }
 
@@ -711,6 +730,7 @@
   renderAgenda();
   renderWorkPlan();
   renderAdmissionsTracker();
+  renderShortlistMatrix();
   renderPhaseThreeComparison();
   renderPhaseFourComparison();
   renderPhaseFiveComparison();
