@@ -218,7 +218,8 @@ h1 {
 .focus-grid,
 .compare-grid,
 .priority-grid,
-.shortlist-grid {
+.shortlist-grid,
+.agenda-grid {
   display: grid;
   gap: 14px;
 }
@@ -243,6 +244,10 @@ h1 {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
+.agenda-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
 .compare-grid {
   grid-template-columns: repeat(4, minmax(0, 1fr));
 }
@@ -252,7 +257,8 @@ h1 {
 .focus-card,
 .compare-card,
 .priority-card,
-.shortlist-card {
+.shortlist-card,
+.agenda-card {
   border-radius: var(--radius-md);
   padding: 18px;
   background: rgba(255, 255, 255, 0.72);
@@ -352,6 +358,17 @@ h1 {
 }
 
 .shortlist-card p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.65;
+}
+
+.agenda-card h3 {
+  margin: 0 0 10px;
+  font-size: 1.08rem;
+}
+
+.agenda-card p {
   margin: 0;
   color: var(--muted);
   line-height: 1.65;
@@ -553,6 +570,10 @@ a {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .agenda-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .filters {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
@@ -584,6 +605,7 @@ a {
   .compare-grid,
   .priority-grid,
   .shortlist-grid,
+  .agenda-grid,
   .filters {
     grid-template-columns: 1fr;
   }

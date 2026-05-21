@@ -50,6 +50,7 @@
     routeCards: document.getElementById("route-cards"),
     priorityLists: document.getElementById("priority-lists"),
     shortlistGrid: document.getElementById("shortlist-grid"),
+    agendaGrid: document.getElementById("agenda-grid"),
     strategyAxes: document.getElementById("strategy-axes"),
     findingsList: document.getElementById("findings-list"),
     timelineList: document.getElementById("timeline-list"),
@@ -173,6 +174,21 @@
         </div>
       `;
       els.shortlistGrid.appendChild(card);
+    });
+  }
+
+  function renderAgenda() {
+    if (!els.agendaGrid || !research.researchAgenda) return;
+    els.agendaGrid.innerHTML = "";
+
+    research.researchAgenda.forEach((item) => {
+      const card = document.createElement("article");
+      card.className = "agenda-card";
+      card.innerHTML = `
+        <h3>${item.title}</h3>
+        <p>${item.detail}</p>
+      `;
+      els.agendaGrid.appendChild(card);
     });
   }
 
@@ -517,6 +533,7 @@
   renderTop();
   renderStrategy();
   renderShortlist();
+  renderAgenda();
   initFilters();
   bindFilters();
   renderPriorityLists();
