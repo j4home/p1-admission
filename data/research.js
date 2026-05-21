@@ -8,6 +8,14 @@ window.__PROJECT_RESEARCH__ = {
       "距離與交通要可接受",
       "同時看理念、方法、成績、升學與路徑連續性"
     ],
+    childProfile: [
+      "外向、開朗、好動，喜歡與人溝通和表達意見",
+      "英文表達力強，閱讀能力高，非常喜愛閱讀",
+      "專注力好，能長時間投入閱讀與創作類活動",
+      "喜歡思考問題，會主動指出錯處和提出修改想法",
+      "喜歡音樂、視藝、游泳和體操，體藝活動基礎明顯",
+      "跟老師關係好，喜歡上學，朋輩互動良好"
+    ],
     note:
       "現階段的距離欄位以油麻地中心點作粗略直線估算，只適合作初步篩選；真正 shortlist 階段仍要逐校核實港鐵、校巴、保姆車及早上繁忙時段通勤。"
   },
@@ -304,34 +312,34 @@ window.__PROJECT_RESEARCH__ = {
     {
       schoolName: "保良局陳守仁小學",
       routeType: "現實核心 shortlist",
-      provisionalFit: "高",
-      strengths: "近家、英語強、升中結果硬訊號清楚、學費相對可承受。",
-      reservations: "未知女兒是否適應熱門學校的比較氣氛與低小節奏。",
-      currentRole: "最像現實主戰場。"
+      provisionalFit: "很高",
+      strengths: "近家、英語強、升中結果硬訊號清楚，而且她的外向、表達力、閱讀力和多元活動特質都對焦。",
+      reservations: "仍要留意熱門學校的比較氣氛，以及低小節奏會否壓縮她閱讀和體藝空間。",
+      currentRole: "最值得先當核心 shortlist 準備。"
     },
     {
       schoolName: "優才(楊殷有娣)書院",
       routeType: "近家長線規劃 shortlist",
-      provisionalFit: "高",
-      strengths: "近家、一條龍、英語強、招生時間表最清楚、長線路徑完整。",
-      reservations: "未知女兒是否適應鮮明的校本理念與一條龍節奏。",
-      currentRole: "最像近家兼可長線規劃的樣本。"
+      provisionalFit: "很高",
+      strengths: "近家、一條龍、英語強，而她喜歡思考、提問、閱讀和表達，與 inquiry / 多元發展路線很配。",
+      reservations: "要再確認你們是否真喜歡其長線節奏，而不只是喜歡理念描述。",
+      currentRole: "很有機會與陳守仁並列核心 shortlist。"
     },
     {
       schoolName: "保良局蔡繼有學校",
       routeType: "理念與路徑型 shortlist",
-      provisionalFit: "中至高",
-      strengths: "雙語、12 年路徑、IGCSE / IBDP 出口、國際化文化清楚。",
-      reservations: "成本高，且最新 Year 1 節奏未完整公開；需確認家庭是否真認同其哲學。",
-      currentRole: "最像文化與路徑選擇題。"
+      provisionalFit: "高",
+      strengths: "雙語、12 年路徑、IGCSE / IBDP 出口清楚，而她的英文、閱讀、音樂、藝術和多元活動特質也相當對焦。",
+      reservations: "成本高，且需確認你們是真心認同其教育哲學，而不只是被路線吸引。",
+      currentRole: "高質素第二核心組，值得認真研究。"
     },
     {
       schoolName: "拔萃女小學",
       routeType: "文化測試型 shortlist",
       provisionalFit: "中至高",
-      strengths: "女兒個案直接可申請、英語強、品牌與制度成熟。",
-      reservations: "成本高，且傳統精英與家長文化未必適合每個孩子。",
-      currentRole: "最像傳統女校文化 benchmark。"
+      strengths: "她外向、肯講、英文表達力強，理論上面試不會吃虧，而且屬女兒個案直接 benchmark。",
+      reservations: "她的優勢其實很多元，若環境過度偏向傳統精英與隱性比較文化，未必最能放大她整體優勢。",
+      currentRole: "保留但更像文化對照組，而不一定是最核心那一間。"
     }
   ],
   childScenarioComparison: [

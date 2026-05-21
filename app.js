@@ -59,6 +59,7 @@
     phaseSixGrid: document.getElementById("phase-six-grid"),
     childScenariosGrid: document.getElementById("child-scenarios-grid"),
     openDayGrid: document.getElementById("open-day-grid"),
+    childProfileGrid: document.getElementById("child-profile-grid"),
     strategyAxes: document.getElementById("strategy-axes"),
     findingsList: document.getElementById("findings-list"),
     timelineList: document.getElementById("timeline-list"),
@@ -350,6 +351,17 @@
         <p>${item.detail}</p>
       `;
       els.openDayGrid.appendChild(card);
+    });
+  }
+
+  function renderChildProfile() {
+    if (!els.childProfileGrid || !research.familyContext?.childProfile) return;
+    els.childProfileGrid.innerHTML = "";
+    research.familyContext.childProfile.forEach((item) => {
+      const card = document.createElement("article");
+      card.className = "agenda-card";
+      card.innerHTML = `<p>${item}</p>`;
+      els.childProfileGrid.appendChild(card);
     });
   }
 
@@ -705,6 +717,7 @@
   renderPhaseSixComparison();
   renderChildScenarios();
   renderOpenDayChecklist();
+  renderChildProfile();
   initFilters();
   bindFilters();
   renderPriorityLists();
