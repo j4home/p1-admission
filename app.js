@@ -53,6 +53,7 @@
     agendaGrid: document.getElementById("agenda-grid"),
     workPlanGrid: document.getElementById("workplan-grid"),
     admissionsGrid: document.getElementById("admissions-grid"),
+    phaseThreeGrid: document.getElementById("phase-three-grid"),
     strategyAxes: document.getElementById("strategy-axes"),
     findingsList: document.getElementById("findings-list"),
     timelineList: document.getElementById("timeline-list"),
@@ -232,6 +233,29 @@
     });
   }
 
+  function renderPhaseThreeComparison() {
+    if (!els.phaseThreeGrid || !research.phaseThreeComparison) return;
+    els.phaseThreeGrid.innerHTML = "";
+
+    research.phaseThreeComparison.forEach((item) => {
+      const card = document.createElement("article");
+      card.className = "agenda-card";
+      card.innerHTML = `
+        <p class="section-kicker">${item.routeType}</p>
+        <h3>${item.schoolName}</h3>
+        <div class="phase-three-meta">
+          <p><strong>成績訊號：</strong>${item.academicSignal}</p>
+          <p><strong>申請成熟度：</strong>${item.admissionsReadiness}</p>
+          <p><strong>成本壓力：</strong>${item.costPressure}</p>
+          <p><strong>家長文化風險：</strong>${item.parentCultureRisk}</p>
+        </div>
+        <p><strong>這間最代表甚麼：</strong>${item.identity}</p>
+        <p><strong>現階段最值得追甚麼：</strong>${item.nextFocus}</p>
+      `;
+      els.phaseThreeGrid.appendChild(card);
+    });
+  }
+
   function renderStrategy() {
     research.strategyAxes.forEach((item) => {
       const card = document.createElement("article");
@@ -279,6 +303,7 @@
         <p style="margin-top:12px;"><strong>家長角度：</strong>${item.parentLens}</p>
         <p style="margin-top:12px;"><strong>學校角度：</strong>${item.schoolLens}</p>
         <p style="margin-top:12px;"><strong>提醒：</strong>${item.caution}</p>
+        ${item.roundThree ? `<p style="margin-top:12px;"><strong>第三輪重點：</strong>${item.roundThree}</p>` : ""}
         <p style="margin-top:12px;"><small>來源：${item.source}</small></p>
       `;
       els.focusProfiles.appendChild(card);
@@ -577,6 +602,7 @@
   renderAgenda();
   renderWorkPlan();
   renderAdmissionsTracker();
+  renderPhaseThreeComparison();
   initFilters();
   bindFilters();
   renderPriorityLists();

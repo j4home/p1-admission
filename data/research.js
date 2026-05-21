@@ -110,6 +110,8 @@ window.__PROJECT_RESEARCH__ = {
         "官方強調多元、全人、成長型思維與 rich language environment，定位不像純傳統操練名校，而是帶有明顯校本發展色彩的本地直資英小。",
       caution:
         "這類學校很容易因為『近 + 熱門 + 英語強』而被快速神化，但真正要補的是功課壓力、升中去向與家長圈文化。",
+      roundThree:
+        "現階段最強的是『近家 + 英語強 + 官方升中結果硬訊號』；最需要補的是功課節奏、家長文化與最新面試細節。",
       source:
         "教育局學校位置資料集；學校官網 Principal's Message / P.1 Admission"
     },
@@ -134,6 +136,8 @@ window.__PROJECT_RESEARCH__ = {
         "學校明顯想建立一套 student-centered、talent-based、longitudinal 的培育模型，而不是單純做成傳統分數導向名校。",
       caution:
         "優才的吸引點很多，但也因此特別容易讓人忽略孩子匹配度；之後一定要補真實家長口碑和低小壓力感。",
+      roundThree:
+        "現階段最強的是『一條龍 + 時間表清楚 + IB 長線結果』；最需要補的是低小評估節奏、家長課程與理念匹配。",
       source:
         "小學部 2027/28 小一入學頁、時間表、校本課程頁；中學部官方 IB Results"
     },
@@ -158,6 +162,8 @@ window.__PROJECT_RESEARCH__ = {
         "從學校角度，它強調全人教育、雙語沉浸、非教材導向閱讀與國際課程承接，並透過一條龍設計建立長線培育的一致性。",
       caution:
         "這類學校不能只看『IB 成績』；還要看你是否真心認同其教育哲學，以及孩子能否在沒有傳統排名驅動下持續成長。",
+      roundThree:
+        "現階段最強的是『12 年雙語國際化路線設計』；最需要補的是最新 Year 1 招生節奏、量化學生結果與真實日常成本。",
       source:
         "家長提供 Google Doc 研究摘要（已下載到本地 source_google_doc.txt）"
     },
@@ -182,8 +188,52 @@ window.__PROJECT_RESEARCH__ = {
         "學校在招生上非常成熟，流程、時間與條件都清楚，顯示其制度化和選才節奏都很穩定。",
       caution:
         "不能只因品牌就當作必報。之後要重點補：功課與壓力、家長圈文化、以及對女兒性格是否合適。",
+      roundThree:
+        "現階段最強的是『申請制度成熟 + 女校傳統精英 benchmark』；最需要補的是 project / 功課結構、家長文化與長線承接體感。",
       source:
         "DGJS Application for Primary 1 / FAQ / Admission System"
+    }
+  ],
+  phaseThreeComparison: [
+    {
+      schoolName: "保良局陳守仁小學",
+      routeType: "本地直資強英語",
+      academicSignal: "高：有官方升中結果、比賽數據與課時分配",
+      admissionsReadiness: "中：已知大節點，但完整面試與文件細節仍待公布",
+      costPressure: "中：學費相對友善，但活動、校車與時間投入仍要計",
+      parentCultureRisk: "中至高：熱門近家名校，家長比較氣氛較易升溫",
+      identity: "最像你們個案中的現實主戰場。",
+      nextFocus: "最新招生細節、功課節奏、家長圈文化、校車覆蓋。"
+    },
+    {
+      schoolName: "優才(楊殷有娣)書院",
+      routeType: "一條龍直資 / inquiry / 資優",
+      academicSignal: "中至高：小學端訊號穩，中學端 IB 38.7 很強",
+      admissionsReadiness: "高：四校中時間表最完整",
+      costPressure: "中至高：P1 可接受，但長線學費與 IB 路徑要一併看",
+      parentCultureRisk: "中：不是單純高壓，而是很吃理念匹配",
+      identity: "最像近家兼可長線規劃的樣本。",
+      nextFocus: "低小評估、家長課程角色、家庭真實體感。"
+    },
+    {
+      schoolName: "保良局蔡繼有學校",
+      routeType: "私立獨立 / 雙語 / IGCSE + IBDP",
+      academicSignal: "中：路線很清楚，但量化結果仍未補足",
+      admissionsReadiness: "低至中：有 admissions news，但未見完整 Year 1 節奏表",
+      costPressure: "高：顯性學費高，隱性成本大概率亦高",
+      parentCultureRisk: "中：風險不在好不好，而在家庭是否真認同其文化",
+      identity: "最像完整的雙語國際化 12 年教育選擇。",
+      nextFocus: "Year 1 招生流程、學生結果、校車與日常運作細節。"
+    },
+    {
+      schoolName: "拔萃女小學",
+      routeType: "傳統女校精英私校",
+      academicSignal: "中：品牌與長線承接文化強，但小學端硬數據仍要補",
+      admissionsReadiness: "高：報名、寄件、面試、結果與註冊節點很成熟",
+      costPressure: "高：顯性學費高，家長時間投入也可能是成本",
+      parentCultureRisk: "中至高：名校文化與高期待本身就可能形成壓力",
+      identity: "最像傳統女校精英文化的 benchmark。",
+      nextFocus: "project / 功課結構、家長文化、與 DGS 承接的真實體感。"
     }
   ],
   phaseOneShortlist: [

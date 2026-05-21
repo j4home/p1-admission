@@ -275,10 +275,17 @@ h1 {
 .axis-card p,
 .focus-card p,
 .compare-card p,
-.route-card p {
+.route-card p,
+.agenda-card p {
   margin: 0;
   line-height: 1.7;
   color: var(--muted);
+}
+
+.phase-three-meta {
+  display: grid;
+  gap: 4px;
+  margin: 12px 0;
 }
 
 .route-card strong {
