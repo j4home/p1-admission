@@ -391,6 +391,85 @@ window.__PROJECT_RESEARCH__ = {
       detail: "最後才形成核心 shortlist，並結合申請時間線、面試要求和後備方案；之後每出現新資料，就再回來更新判斷。"
     }
   ],
+  admissionsTracker: [
+    {
+      scope: "官方大時間線",
+      date: "截至 2026-05-21",
+      title: "2027 年度官方時間表仍待教育局公布",
+      detail: "教育局網站目前仍主要顯示 2026 年度小一入學統籌資料。現階段可先用 2026 年度官方節奏作參考，但不能當作 2027 年已定案。",
+      statusLabel: "待公布",
+      statusClass: "status-watch",
+      lastVerified: "2026-05-21",
+      sourceLabel: "教育局：小一入學統籌辦法",
+      sourceUrl: "https://www.edb.gov.hk/tc/edu-system/primary-secondary/spa-systems/primary-1-admission/"
+    },
+    {
+      scope: "官方大時間線",
+      date: "2025-09-18 至 2025-09-26",
+      title: "自行分配學位電子申請期",
+      detail: "這是 2026 年度入學的官方節奏參考。若 2027 年度維持相近安排，下一個週期大概率也會落在 2026 年 9 月中下旬附近。",
+      statusLabel: "參考上一年",
+      statusClass: "status-neutral",
+      lastVerified: "2026-05-21",
+      sourceLabel: "政府新聞公報：2026 年度小一入學安排",
+      sourceUrl: "https://www.info.gov.hk/gia/general/202508/29/P2025082900230.htm"
+    },
+    {
+      scope: "官方大時間線",
+      date: "2025-11-24",
+      title: "自行分配學位結果公布",
+      detail: "如你們保留官津後路，這個節點很重要，因為之後會影響是否進入統一派位、以及直私 offer 的取捨節奏。",
+      statusLabel: "參考上一年",
+      statusClass: "status-neutral",
+      lastVerified: "2026-05-21",
+      sourceLabel: "政府新聞公報：自行分配學位結果",
+      sourceUrl: "https://www.info.gov.hk/gia/general/202511/21/P2025112100156.htm"
+    },
+    {
+      scope: "官方大時間線",
+      date: "2025-11-26 至 2025-11-27",
+      title: "自行分配學位註冊",
+      detail: "獲派自行分配學位後，需要在指定日子到校辦理註冊。若錯過而沒有預先聯絡學校，可能會被視作放棄學位。",
+      statusLabel: "參考上一年",
+      statusClass: "status-neutral",
+      lastVerified: "2026-05-21",
+      sourceLabel: "政府新聞公報：自行分配學位結果",
+      sourceUrl: "https://www.info.gov.hk/gia/general/202511/21/P2025112100156.htm"
+    },
+    {
+      scope: "官方大時間線",
+      date: "2026-01-19 至 2026-01-25",
+      title: "統一派位選校期",
+      detail: "若未獲自行分配學位，這是填選官津學校的核心窗口。就算你們主攻直私，也值得保留這個節奏感作後備安排。",
+      statusLabel: "參考上一年",
+      statusClass: "status-neutral",
+      lastVerified: "2026-05-21",
+      sourceLabel: "政府新聞公報：統一派位選校",
+      sourceUrl: "https://www.info.gov.hk/gia/general/202601/12/P2026011200177.htm"
+    },
+    {
+      scope: "官方大時間線",
+      date: "2026-06-03",
+      title: "統一派位結果公布",
+      detail: "教育局公布 2026 年度統一派位結果的日期。對 2027 週期而言，這是我們之後預估節奏時的重要參考點。",
+      statusLabel: "參考上一年",
+      statusClass: "status-neutral",
+      lastVerified: "2026-05-21",
+      sourceLabel: "政府新聞公報：統一派位結果公布",
+      sourceUrl: "https://www.info.gov.hk/gia/general/202601/12/P2026011200177.htm"
+    },
+    {
+      scope: "逐校申請時間線",
+      date: "之後逐校補上",
+      title: "直資 / 私立 / 私立獨立學校節奏將獨立追蹤",
+      detail: "之後每間學校都會另外記錄 open day、資訊日、申請開始、deadline、interview、放榜和留位日期，並按最後核實日期更新。",
+      statusLabel: "建設中",
+      statusClass: "status-watch",
+      lastVerified: "2026-05-21",
+      sourceLabel: "本研究專案方法",
+      sourceUrl: "./data/research.js"
+    }
+  ],
   externalResearchLinks: [
     {
       label: "Gemini 分享 1",

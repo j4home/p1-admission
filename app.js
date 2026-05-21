@@ -52,6 +52,7 @@
     shortlistGrid: document.getElementById("shortlist-grid"),
     agendaGrid: document.getElementById("agenda-grid"),
     workPlanGrid: document.getElementById("workplan-grid"),
+    admissionsGrid: document.getElementById("admissions-grid"),
     strategyAxes: document.getElementById("strategy-axes"),
     findingsList: document.getElementById("findings-list"),
     timelineList: document.getElementById("timeline-list"),
@@ -206,6 +207,28 @@
         <p>${item.detail}</p>
       `;
       els.workPlanGrid.appendChild(card);
+    });
+  }
+
+  function renderAdmissionsTracker() {
+    if (!els.admissionsGrid || !research.admissionsTracker) return;
+    els.admissionsGrid.innerHTML = "";
+
+    research.admissionsTracker.forEach((item) => {
+      const card = document.createElement("article");
+      card.className = "agenda-card";
+      card.innerHTML = `
+        <div class="card-headline">
+          <p class="section-kicker">${item.scope}</p>
+          <span class="status-pill ${item.statusClass || "status-neutral"}">${item.statusLabel}</span>
+        </div>
+        <h3>${item.date}</h3>
+        <p><strong>${item.title}</strong></p>
+        <p>${item.detail}</p>
+        <p class="source-footnote"><small>最後核實：${item.lastVerified}</small></p>
+        <p class="source-footnote"><small><a href="${item.sourceUrl}" target="_blank" rel="noreferrer">${item.sourceLabel}</a></small></p>
+      `;
+      els.admissionsGrid.appendChild(card);
     });
   }
 
@@ -552,6 +575,7 @@
   renderShortlist();
   renderAgenda();
   renderWorkPlan();
+  renderAdmissionsTracker();
   initFilters();
   bindFilters();
   renderPriorityLists();

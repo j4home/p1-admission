@@ -368,10 +368,44 @@ h1 {
   font-size: 1.08rem;
 }
 
+.card-headline {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  align-items: flex-start;
+  margin-bottom: 8px;
+}
+
 .agenda-card p {
   margin: 0;
   color: var(--muted);
   line-height: 1.65;
+}
+
+.status-pill {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 999px;
+  padding: 5px 10px;
+  font-size: 0.78rem;
+  white-space: nowrap;
+  border: 1px solid transparent;
+}
+
+.status-neutral {
+  background: rgba(15, 108, 93, 0.08);
+  color: var(--accent);
+  border-color: rgba(15, 108, 93, 0.12);
+}
+
+.status-watch {
+  background: rgba(203, 109, 61, 0.1);
+  color: #9b4d25;
+  border-color: rgba(203, 109, 61, 0.18);
+}
+
+.source-footnote {
+  margin-top: 10px !important;
 }
 
 .shortlist-meta {
