@@ -51,6 +51,7 @@
     priorityLists: document.getElementById("priority-lists"),
     shortlistGrid: document.getElementById("shortlist-grid"),
     agendaGrid: document.getElementById("agenda-grid"),
+    workPlanGrid: document.getElementById("workplan-grid"),
     strategyAxes: document.getElementById("strategy-axes"),
     findingsList: document.getElementById("findings-list"),
     timelineList: document.getElementById("timeline-list"),
@@ -189,6 +190,22 @@
         <p>${item.detail}</p>
       `;
       els.agendaGrid.appendChild(card);
+    });
+  }
+
+  function renderWorkPlan() {
+    if (!els.workPlanGrid || !research.workPlan) return;
+    els.workPlanGrid.innerHTML = "";
+
+    research.workPlan.forEach((item) => {
+      const card = document.createElement("article");
+      card.className = "agenda-card";
+      card.innerHTML = `
+        <p class="section-kicker">${item.phase}</p>
+        <h3>${item.title}</h3>
+        <p>${item.detail}</p>
+      `;
+      els.workPlanGrid.appendChild(card);
     });
   }
 
@@ -534,6 +551,7 @@
   renderStrategy();
   renderShortlist();
   renderAgenda();
+  renderWorkPlan();
   initFilters();
   bindFilters();
   renderPriorityLists();
