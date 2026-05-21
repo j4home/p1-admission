@@ -300,6 +300,40 @@ window.__PROJECT_RESEARCH__ = {
       watchlist: "重點盯 2025-08-15 報名、2025-08-26 deadline、2025-10 首輪面試。"
     }
   ],
+  phaseSixComparison: [
+    {
+      schoolName: "保良局陳守仁小學",
+      routeType: "現實核心 shortlist",
+      provisionalFit: "高",
+      strengths: "近家、英語強、升中結果硬訊號清楚、學費相對可承受。",
+      reservations: "未知女兒是否適應熱門學校的比較氣氛與低小節奏。",
+      currentRole: "最像現實主戰場。"
+    },
+    {
+      schoolName: "優才(楊殷有娣)書院",
+      routeType: "近家長線規劃 shortlist",
+      provisionalFit: "高",
+      strengths: "近家、一條龍、英語強、招生時間表最清楚、長線路徑完整。",
+      reservations: "未知女兒是否適應鮮明的校本理念與一條龍節奏。",
+      currentRole: "最像近家兼可長線規劃的樣本。"
+    },
+    {
+      schoolName: "保良局蔡繼有學校",
+      routeType: "理念與路徑型 shortlist",
+      provisionalFit: "中至高",
+      strengths: "雙語、12 年路徑、IGCSE / IBDP 出口、國際化文化清楚。",
+      reservations: "成本高，且最新 Year 1 節奏未完整公開；需確認家庭是否真認同其哲學。",
+      currentRole: "最像文化與路徑選擇題。"
+    },
+    {
+      schoolName: "拔萃女小學",
+      routeType: "文化測試型 shortlist",
+      provisionalFit: "中至高",
+      strengths: "女兒個案直接可申請、英語強、品牌與制度成熟。",
+      reservations: "成本高，且傳統精英與家長文化未必適合每個孩子。",
+      currentRole: "最像傳統女校文化 benchmark。"
+    }
+  ],
   phaseOneShortlist: [
     {
       schoolName: "保良局陳守仁小學",
@@ -645,6 +679,138 @@ window.__PROJECT_RESEARCH__ = {
       lastVerified: "2026-05-21",
       sourceLabel: "政府新聞公報：統一派位結果公布",
       sourceUrl: "https://www.info.gov.hk/gia/general/202601/12/P2026011200177.htm"
+    },
+    {
+      scope: "校本日曆提醒",
+      date: "2026-06-08",
+      title: "優才(楊殷有娣)書院：小一網上申請截止",
+      detail: "2027/28 小一申請截止日，屬目前四校中最清晰、最早要實際跟進的一間。",
+      statusLabel: "優才",
+      statusClass: "status-neutral",
+      lastVerified: "2026-05-21",
+      sourceLabel: "GT 2027/28 小一時間表",
+      sourceUrl: "https://main.gtschool.hk/admission/g1-2728/timeable/"
+    },
+    {
+      scope: "校本日曆提醒",
+      date: "2026-06-12 至 2026-06-15",
+      title: "優才(楊殷有娣)書院：第一階段面見通知",
+      detail: "學校以電郵通知是否進入第一階段面見名單。",
+      statusLabel: "優才",
+      statusClass: "status-neutral",
+      lastVerified: "2026-05-21",
+      sourceLabel: "GT 2027/28 小一時間表",
+      sourceUrl: "https://main.gtschool.hk/admission/g1-2728/timeable/"
+    },
+    {
+      scope: "校本日曆提醒",
+      date: "2026-06-27 / 2026-06-28 / 2026-07-04 / 2026-07-05",
+      title: "優才(楊殷有娣)書院：第一階段入學面見",
+      detail: "後備日為 2026-07-01 及 2026-07-11。",
+      statusLabel: "優才",
+      statusClass: "status-neutral",
+      lastVerified: "2026-05-21",
+      sourceLabel: "GT 2027/28 小一時間表",
+      sourceUrl: "https://main.gtschool.hk/admission/g1-2728/timeable/"
+    },
+    {
+      scope: "校本日曆提醒",
+      date: "2026-07-10",
+      title: "保良局陳守仁小學：公布 2027/28 詳細招生資訊",
+      detail: "這是你們之後要立即回官網核實 open day、申請表、文件及面試細節的關鍵日。",
+      statusLabel: "陳守仁",
+      statusClass: "status-neutral",
+      lastVerified: "2026-05-21",
+      sourceLabel: "PLKCTSLPS P.1 Admission",
+      sourceUrl: "https://www.plkctslps.edu.hk/en/content.php?wid=87"
+    },
+    {
+      scope: "校本日曆提醒",
+      date: "2026-08（上旬）",
+      title: "保良局陳守仁小學：網上申請",
+      detail: "官網已預告 2027/28 小一網上申請會在 2026 年 8 月上旬進行。",
+      statusLabel: "陳守仁",
+      statusClass: "status-neutral",
+      lastVerified: "2026-05-21",
+      sourceLabel: "PLKCTSLPS P.1 Admission",
+      sourceUrl: "https://www.plkctslps.edu.hk/en/content.php?wid=87"
+    },
+    {
+      scope: "校本日曆提醒",
+      date: "2026-09-07 至 2026-09-09",
+      title: "優才(楊殷有娣)書院：第一階段結果",
+      detail: "學校以電郵通知是否進入第二階段面見名單。",
+      statusLabel: "優才",
+      statusClass: "status-neutral",
+      lastVerified: "2026-05-21",
+      sourceLabel: "GT 2027/28 小一時間表",
+      sourceUrl: "https://main.gtschool.hk/admission/g1-2728/timeable/"
+    },
+    {
+      scope: "校本日曆提醒",
+      date: "2026-09 下旬 至 2026-10 上旬",
+      title: "優才(楊殷有娣)書院：第二階段入學面見",
+      detail: "第二階段面見日子將安排在九月下旬至十月上旬。",
+      statusLabel: "優才",
+      statusClass: "status-neutral",
+      lastVerified: "2026-05-21",
+      sourceLabel: "GT 2027/28 小一時間表",
+      sourceUrl: "https://main.gtschool.hk/admission/g1-2728/timeable/"
+    },
+    {
+      scope: "校本日曆提醒",
+      date: "2026-10",
+      title: "保良局陳守仁小學：第一輪面試",
+      detail: "官網目前已列出 2027/28 小一 first interview 在 2026 年 10 月。",
+      statusLabel: "陳守仁",
+      statusClass: "status-neutral",
+      lastVerified: "2026-05-21",
+      sourceLabel: "PLKCTSLPS P.1 Admission",
+      sourceUrl: "https://www.plkctslps.edu.hk/en/content.php?wid=87"
+    },
+    {
+      scope: "校本日曆提醒",
+      date: "2026-10（下旬）",
+      title: "優才(楊殷有娣)書院：最終結果公布",
+      detail: "第二階段入學面見結果於十月下旬公布。",
+      statusLabel: "優才",
+      statusClass: "status-neutral",
+      lastVerified: "2026-05-21",
+      sourceLabel: "GT 2027/28 小一時間表",
+      sourceUrl: "https://main.gtschool.hk/admission/g1-2728/timeable/"
+    },
+    {
+      scope: "校本日曆提醒",
+      date: "2025-08-15 至 2025-08-26",
+      title: "拔萃女小學：最新已公布周期申請窗口（參考節奏）",
+      detail: "這是 2026/27 周期的最新已公布日子，可用來預估你們下一周期大概仍會在 8 月中下旬開放申請。",
+      statusLabel: "DGJS 參考",
+      statusClass: "status-neutral",
+      lastVerified: "2026-05-21",
+      sourceLabel: "DGJS Pr.1 Admission 2026-2027",
+      sourceUrl: "https://www.dgjs.edu.hk/?page_id=14231"
+    },
+    {
+      scope: "校本日曆提醒",
+      date: "2025-10 / 2025-11 / 2025-12",
+      title: "拔萃女小學：最新已公布周期面試與 offer 節奏（參考）",
+      detail: "最新已公布周期顯示：10 月首輪面試、11 月中起第二輪、12 月下旬 offer、翌年 1 月註冊。",
+      statusLabel: "DGJS 參考",
+      statusClass: "status-neutral",
+      lastVerified: "2026-05-21",
+      sourceLabel: "DGJS Pr.1 Admission 2026-2027",
+      sourceUrl: "https://www.dgjs.edu.hk/?page_id=14231"
+    },
+    {
+      scope: "校本日曆提醒",
+      date: "2026-01-20",
+      title: "保良局蔡繼有學校：Admissions Update 已發布",
+      detail: "官網 admissions news 最新見到 Admissions Update 日期；但 Year 1 完整 timetable 仍未公開，需持續追蹤。",
+      statusLabel: "CKY 待追",
+      statusClass: "status-watch",
+      lastVerified: "2026-05-21",
+      sourceLabel: "CKY Admissions News",
+      sourceUrl: "https://cky.edu.hk/admissions/admissions-news/"
     },
     {
       scope: "逐校申請時間線",

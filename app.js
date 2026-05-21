@@ -56,6 +56,7 @@
     phaseThreeGrid: document.getElementById("phase-three-grid"),
     phaseFourGrid: document.getElementById("phase-four-grid"),
     phaseFiveGrid: document.getElementById("phase-five-grid"),
+    phaseSixGrid: document.getElementById("phase-six-grid"),
     strategyAxes: document.getElementById("strategy-axes"),
     findingsList: document.getElementById("findings-list"),
     timelineList: document.getElementById("timeline-list"),
@@ -296,6 +297,27 @@
         </div>
       `;
       els.phaseFiveGrid.appendChild(card);
+    });
+  }
+
+  function renderPhaseSixComparison() {
+    if (!els.phaseSixGrid || !research.phaseSixComparison) return;
+    els.phaseSixGrid.innerHTML = "";
+
+    research.phaseSixComparison.forEach((item) => {
+      const card = document.createElement("article");
+      card.className = "agenda-card";
+      card.innerHTML = `
+        <p class="section-kicker">${item.routeType}</p>
+        <h3>${item.schoolName}</h3>
+        <div class="phase-three-meta">
+          <p><strong>暫定匹配度：</strong>${item.provisionalFit}</p>
+          <p><strong>現階段優勢：</strong>${item.strengths}</p>
+          <p><strong>目前保留：</strong>${item.reservations}</p>
+        </div>
+        <p><strong>現階段角色：</strong>${item.currentRole}</p>
+      `;
+      els.phaseSixGrid.appendChild(card);
     });
   }
 
@@ -648,6 +670,7 @@
   renderPhaseThreeComparison();
   renderPhaseFourComparison();
   renderPhaseFiveComparison();
+  renderPhaseSixComparison();
   initFilters();
   bindFilters();
   renderPriorityLists();
