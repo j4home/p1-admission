@@ -55,6 +55,7 @@
     admissionsGrid: document.getElementById("admissions-grid"),
     phaseThreeGrid: document.getElementById("phase-three-grid"),
     phaseFourGrid: document.getElementById("phase-four-grid"),
+    phaseFiveGrid: document.getElementById("phase-five-grid"),
     strategyAxes: document.getElementById("strategy-axes"),
     findingsList: document.getElementById("findings-list"),
     timelineList: document.getElementById("timeline-list"),
@@ -275,6 +276,26 @@
         <p><strong>最要小心：</strong>${item.caution}</p>
       `;
       els.phaseFourGrid.appendChild(card);
+    });
+  }
+
+  function renderPhaseFiveComparison() {
+    if (!els.phaseFiveGrid || !research.phaseFiveComparison) return;
+    els.phaseFiveGrid.innerHTML = "";
+
+    research.phaseFiveComparison.forEach((item) => {
+      const card = document.createElement("article");
+      card.className = "agenda-card";
+      card.innerHTML = `
+        <p class="section-kicker">${item.routeType}</p>
+        <h3>${item.schoolName}</h3>
+        <div class="phase-three-meta">
+          <p><strong>學生準備：</strong>${item.studentPrep}</p>
+          <p><strong>家長準備：</strong>${item.parentPrep}</p>
+          <p><strong>watchlist：</strong>${item.watchlist}</p>
+        </div>
+      `;
+      els.phaseFiveGrid.appendChild(card);
     });
   }
 
@@ -626,6 +647,7 @@
   renderAdmissionsTracker();
   renderPhaseThreeComparison();
   renderPhaseFourComparison();
+  renderPhaseFiveComparison();
   initFilters();
   bindFilters();
   renderPriorityLists();

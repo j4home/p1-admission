@@ -270,6 +270,36 @@ window.__PROJECT_RESEARCH__ = {
       caution: "真正的壓力未必在面試，而可能在後續家長文化。"
     }
   ],
+  phaseFiveComparison: [
+    {
+      schoolName: "保良局陳守仁小學",
+      routeType: "本地直資強英語",
+      studentPrep: "雙語表達、聽指令、遊戲互動、自然回應。",
+      parentPrep: "講清楚為何重視英語語境，以及為何這間適合你女兒而不只是近和熱門。",
+      watchlist: "重點看 2026-07-10 後的正式招生詳情、open day、面試安排。"
+    },
+    {
+      schoolName: "優才(楊殷有娣)書院",
+      routeType: "一條龍直資 / inquiry / 資優",
+      studentPrep: "表達、提問、互動、自信和體驗活動適應力。",
+      parentPrep: "講清楚是否真接受 inquiry、資優、一條龍與 DSE / IB 長線路徑。",
+      watchlist: "按已公布 timetable 追第一階段通知、面見、第二階段和最終結果。"
+    },
+    {
+      schoolName: "保良局蔡繼有學校",
+      routeType: "私立獨立 / 雙語 / IGCSE + IBDP",
+      studentPrep: "英語、普通話、自然互動、描述生活經驗和開放式表達。",
+      parentPrep: "講清楚你們對雙語、閱讀導向、國際化與中文深度的平衡想法。",
+      watchlist: "持續追 Admissions Update、Year 1 timetable、open day / school tour / briefing。"
+    },
+    {
+      schoolName: "拔萃女小學",
+      routeType: "傳統女校精英私校",
+      studentPrep: "聽說、思維、生活話題對答、禮貌、自信和情緒穩定。",
+      parentPrep: "講清楚你們為何想要女校文化，以及如何配合孩子成長而不只追名氣。",
+      watchlist: "重點盯 2025-08-15 報名、2025-08-26 deadline、2025-10 首輪面試。"
+    }
+  ],
   phaseOneShortlist: [
     {
       schoolName: "保良局陳守仁小學",
