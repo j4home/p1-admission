@@ -114,33 +114,6 @@ window.__PROJECT_RESEARCH__ = {
   ],
   phaseOneShortlist: [
     {
-      schoolName: "香港培正小學",
-      routeType: "一般私立小學",
-      bucket: "現時優先關注",
-      englishSignal: "屬中英文平衡、傳統文化較強的私校代表，可作為『英語優先但未必要極端國際化』的參照。",
-      whyShortlisted: "你已明確點名，而且它能幫你測試自己究竟想要『強英文』，還是『穩中文 + 不錯英文 + 傳統名校文化』。",
-      fit: "適合想保留較深中文根基、較穩校風與傳統學校感的家庭。",
-      watchout: "如果你最後發現自己最看重的是全天候英語語境，培正可能更像比較組，而非最終首選。"
-    },
-    {
-      schoolName: "Stamford American School Hong Kong",
-      routeType: "一般私立小學",
-      bucket: "現時優先關注",
-      englishSignal: "英文語境強，較接近國際課程市場的家長想像。",
-      whyShortlisted: "你已明確點名，而它對你最大的價值，是幫你分辨自己要的是『英文』還是『整套非本地課程生活方式』。",
-      fit: "適合把國際化、英語沉浸與非本地課程放得很前的家庭。",
-      watchout: "它不是單純更英文，而是整體文化、課程、家長群和升學出口都與本地直私路線不同。"
-    },
-    {
-      schoolName: "滬江維多利亞學校",
-      routeType: "私立獨立學校",
-      bucket: "現時優先關注",
-      englishSignal: "雙語與 IB 連續性清晰，是本地家庭常會認真考慮的國際化私立獨立學校。",
-      whyShortlisted: "你已明確點名，而且它很適合作為蔡繼有與 Stamford 之間的另一種非本地課程參照模型。",
-      fit: "適合重視雙語、IB continuum、國際視野與較長線課程一致性的家庭。",
-      watchout: "港島南交通成本與家庭生活節奏要一併計算，不能只看課程和品牌。"
-    },
-    {
       schoolName: "保良局陳守仁小學",
       routeType: "直資小學",
       bucket: "核心近距離",
@@ -179,7 +152,7 @@ window.__PROJECT_RESEARCH__ = {
     {
       schoolName: "香港培正小學",
       routeType: "一般私立小學",
-      bucket: "核心近距離",
+      bucket: "延伸比較 / 之後再考慮",
       englishSignal: "不是最典型的全英沉浸，但屬高質傳統私校，比較適合作為中文/英文平衡路線參照。",
       whyShortlisted: "地點近、品牌強、文化穩定，值得拿來跟英語更激進的學校對照。",
       fit: "適合想保留較深中文基礎與傳統學校文化的家庭作對照。",
@@ -224,7 +197,7 @@ window.__PROJECT_RESEARCH__ = {
     {
       schoolName: "Stamford American School Hong Kong",
       routeType: "一般私立小學",
-      bucket: "非本地課程延伸",
+      bucket: "延伸比較 / 之後再考慮",
       englishSignal: "英文語境強，較接近國際課程市場的家長想像。",
       whyShortlisted: "雖然在資料集裡屬 private，但它對你而言實際上更接近『非本地課程市場』的重要參照。",
       fit: "適合想測試自己是否其實更偏向國際學校式英語教育的家庭。",
@@ -233,7 +206,7 @@ window.__PROJECT_RESEARCH__ = {
     {
       schoolName: "滬江維多利亞學校",
       routeType: "私立獨立學校",
-      bucket: "非本地課程延伸",
+      bucket: "延伸比較 / 之後再考慮",
       englishSignal: "官方資料顯示其 IB 連續性與雙語特徵明確。",
       whyShortlisted: "若你把非本地課程放進主戰場，它是很值得與蔡繼有、Stamford 放在一起看的另一種模型。",
       fit: "適合重視雙語、IB continuum 與國際視野的家庭。",
@@ -323,7 +296,7 @@ window.__PROJECT_RESEARCH__ = {
     {
       schoolName: "京斯敦國際學校",
       routeType: "一般私立小學",
-      bucket: "再加 10 間",
+      bucket: "延伸比較 / 之後再考慮",
       englishSignal: "英語與國際化定位明確，且校址接近九龍核心。",
       whyShortlisted: "若你們想把國際取向拉回到交通較易接受的範圍，它值得保留觀察。",
       fit: "適合把英文與國際文化放得較前，又不想每日跨區太遠的家庭。",
@@ -332,7 +305,7 @@ window.__PROJECT_RESEARCH__ = {
     {
       schoolName: "美國國際學校",
       routeType: "一般私立小學",
-      bucket: "再加 10 間",
+      bucket: "延伸比較 / 之後再考慮",
       englishSignal: "英文及美式課程文化較鮮明。",
       whyShortlisted: "它能幫你比較『美式國際學校』和『本地直資英文路線』的真實差別。",
       fit: "適合真正考慮國際升學文化的家庭。",
