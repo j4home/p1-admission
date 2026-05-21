@@ -52,6 +52,7 @@
     shortlistGrid: document.getElementById("shortlist-grid"),
     agendaGrid: document.getElementById("agenda-grid"),
     workPlanGrid: document.getElementById("workplan-grid"),
+    latestIntelGrid: document.getElementById("latest-intel-grid"),
     admissionsGrid: document.getElementById("admissions-grid"),
     shortlistMatrixGrid: document.getElementById("shortlist-matrix-grid"),
     phaseThreeGrid: document.getElementById("phase-three-grid"),
@@ -215,6 +216,23 @@
         <p>${item.detail}</p>
       `;
       els.workPlanGrid.appendChild(card);
+    });
+  }
+
+  function renderLatestIntel() {
+    if (!els.latestIntelGrid || !research.latestVerifiedIntel) return;
+    els.latestIntelGrid.innerHTML = "";
+
+    research.latestVerifiedIntel.forEach((item) => {
+      const card = document.createElement("article");
+      card.className = "agenda-card";
+      card.innerHTML = `
+        <p class="section-kicker">${item.status}</p>
+        <h3>${item.schoolName}</h3>
+        <p>${item.detail}</p>
+        <p class="source-footnote"><small><a href="${item.sourceUrl}" target="_blank" rel="noreferrer">${item.sourceLabel}</a></small></p>
+      `;
+      els.latestIntelGrid.appendChild(card);
     });
   }
 
@@ -729,6 +747,7 @@
   renderShortlist();
   renderAgenda();
   renderWorkPlan();
+  renderLatestIntel();
   renderAdmissionsTracker();
   renderShortlistMatrix();
   renderPhaseThreeComparison();

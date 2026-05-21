@@ -47,6 +47,43 @@ window.__PROJECT_RESEARCH__ = {
     "若家長特別重視英語語境，必須分清『英文授課』、『雙語課程』、『英語環境強』與『真正沉浸式語境』四個不同概念，不能混為一談。",
     "由油麻地出發，九龍區與港島西/中西區部分學校在通勤上較具優勢，但若目標是某些新界直資/國際學校，校巴供應與車程波動會成為實際決策關鍵。"
   ],
+  latestVerifiedIntel: [
+    {
+      schoolName: "港大同學會小學",
+      status: "已核實",
+      detail: "2027-28 年度一年級入學申請總窗口為 2026-05-02 13:00 至 2026-05-23 12:00；網上報名至 2026-05-22 13:00，親身遞交為 2026-05-22 09:00 至 2026-05-23 12:00。",
+      sourceLabel: "港同官方一年級入學申請資訊",
+      sourceUrl: "https://www.hkugaps.edu.hk/tc/page/detail/455"
+    },
+    {
+      schoolName: "優才(楊殷有娣)書院",
+      status: "已核實",
+      detail: "2027/28 小一網上申請截至 2026-06-08；第一階段面見安排和結果日期亦已由官網完整公布。",
+      sourceLabel: "GT 官方 2027/28 小一時間表",
+      sourceUrl: "https://main.gtschool.hk/admission/g1-2728/timeable/"
+    },
+    {
+      schoolName: "香港浸會大學附屬學校王錦輝中小學",
+      status: "已核實",
+      detail: "2027-2028 年度小一入學簡介會暨開放日與申請開放日同為 2026-06-06；校方 2026-05-06 已公布活動滿額，並指申請於當日上午 10:00 開放。",
+      sourceLabel: "王錦輝官方消息",
+      sourceUrl: "https://www.hkbuas.edu.hk/tc/ps/news/%20FULL%20%E2%80%93%202027-2028%20Grade%20One%20Admission%20Briefing%20cum%20Open%20House%20%E6%BB%BF%E9%A1%8D%20%E2%80%94%202027-2028%E5%B9%B4%E5%BA%A6%E5%B0%8F%E4%B8%80%E5%85%A5%E5%AD%B8%E7%B0%A1%E4%BB%8B%E6%9C%83%E6%9A%A8%E5%AD%B8%E6%A0%A1%E9%96%8B%E6%94%BE%E6%97%A5"
+    },
+    {
+      schoolName: "英華小學",
+      status: "部分核實",
+      detail: "官網已確認 2027-2028 小一入學申請及簡介會資訊已發布，並連到專用 Google Site；但我暫時未能直接從官方頁面抓取你提供的 2026-07-11 簡介會日子，需要再核對該專頁內容。",
+      sourceLabel: "英華官方小一入學頁",
+      sourceUrl: "https://www.yingwaps.edu.hk/tc/content.php?wid=21"
+    },
+    {
+      schoolName: "香港華人基督教聯會真道書院",
+      status: "部分核實",
+      detail: "官網已確認 2027-28 小一(基階一年級)申請頁已開放，但我暫時未能直接從官方頁面抓取你提供的 2026-05-16 簡介會和 2026-06-30 截止日，需要再核對。",
+      sourceLabel: "真道官方小一頁",
+      sourceUrl: "https://logos.edu.hk/tc/primary-1-fs1"
+    }
+  ],
   timeline: [
     {
       phase: "現在至 2026 年夏季",
@@ -780,6 +817,28 @@ window.__PROJECT_RESEARCH__ = {
       lastVerified: "2026-05-21",
       sourceLabel: "GT 2027/28 小一時間表",
       sourceUrl: "https://main.gtschool.hk/admission/g1-2728/timeable/"
+    },
+    {
+      scope: "校本日曆提醒",
+      date: "2026-05-23 中午 12:00",
+      title: "港大同學會小學：一年級入學申請總截止",
+      detail: "總申請窗口至 2026-05-23 中午 12:00；若用網上報名，則提早於 2026-05-22 下午 1:00 截止。",
+      statusLabel: "港同",
+      statusClass: "status-neutral",
+      lastVerified: "2026-05-22",
+      sourceLabel: "港同官方一年級入學申請資訊",
+      sourceUrl: "https://www.hkugaps.edu.hk/tc/page/detail/455"
+    },
+    {
+      scope: "校本日曆提醒",
+      date: "2026-06-06",
+      title: "香港浸會大學附屬學校王錦輝中小學：簡介會暨開放日 / 申請開放",
+      detail: "校方已確認 2027-2028 年度小一入學簡介會暨學校開放日於 2026-06-06 舉行，並指申請於當日上午 10:00 開放。",
+      statusLabel: "王錦輝",
+      statusClass: "status-neutral",
+      lastVerified: "2026-05-22",
+      sourceLabel: "王錦輝官方消息",
+      sourceUrl: "https://www.hkbuas.edu.hk/tc/ps/news/%20FULL%20%E2%80%93%202027-2028%20Grade%20One%20Admission%20Briefing%20cum%20Open%20House%20%E6%BB%BF%E9%A1%8D%20%E2%80%94%202027-2028%E5%B9%B4%E5%BA%A6%E5%B0%8F%E4%B8%80%E5%85%A5%E5%AD%B8%E7%B0%A1%E4%BB%8B%E6%9C%83%E6%9A%A8%E5%AD%B8%E6%A0%A1%E9%96%8B%E6%94%BE%E6%97%A5"
     },
     {
       scope: "校本日曆提醒",
