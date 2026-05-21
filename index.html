@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>香港直資・私立・非本地課程小學研究台</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <div id="access-gate" class="gate-shell">
+    <div class="gate-card">
+      <p class="section-kicker">Private Link</p>
+      <h2>輸入網站密碼</h2>
+      <p class="gate-text">
+        這個研究頁已公開上網，但加上了簡單 passcode。這種保護適合家庭內部分享，不適合存放高度敏感資料。
+      </p>
+      <label class="field">
+        <span>Passcode</span>
+        <input id="gate-input" type="password" placeholder="輸入密碼" />
+      </label>
+      <div class="gate-actions">
+        <button id="gate-submit" class="preset-btn active" type="button">進入網站</button>
+        <span id="gate-hint" class="gate-hint"></span>
+      </div>
+      <p id="gate-error" class="gate-error" aria-live="polite"></p>
+    </div>
+  </div>
+
+  <div class="page-shell">
+    <header class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">Hong Kong Primary School Research Desk</p>
+        <h1>香港直資・私立・非本地課程小學研究台</h1>
+        <p class="hero-text">
+          這是一個為家長而設的動態研究頁。現階段重點放在直資、私立、私立獨立、國際/非本地課程小學，
+          並以 <strong>英語教學</strong>、<strong>語境</strong>、<strong>升學路徑</strong>、<strong>理念匹配</strong>、
+          以及由 <strong>油麻地</strong> 出發的交通可行性作為核心維度。
+        </p>
+      </div>
+      <div class="hero-panel">
+        <div class="panel-kicker">目前狀態</div>
+        <div class="panel-stat" id="stat-total">-</div>
+        <div class="panel-label">已整理的相關學校項目</div>
+        <div class="panel-note" id="panel-note"></div>
+      </div>
+    </header>
+
+    <main class="content-grid">
+      <section class="priority card full-span">
+        <div class="section-head">
+          <div>
+            <p class="section-kicker">Primary Pool</p>
+            <h2>太太先看清單</h2>
+          </div>
+          <div class="section-note">
+            預設先看 `直資小學`、`一般私立小學`、`私立獨立學校`。國際學校與英基保留作第二層延伸研究。
+          </div>
+        </div>
+        <div class="preset-row">
+          <button class="preset-btn active" data-preset="core" type="button">主分析池：直資 + 私立 + 私立獨立</button>
+          <button class="preset-btn" data-preset="all" type="button">全部：加上國際 + 英基</button>
+          <button class="preset-btn" data-preset="intl" type="button">只看國際 / 英基</button>
+        </div>
+        <div id="priority-lists" class="priority-grid"></div>
+      </section>
+
+      <section class="overview card">
+        <div class="section-head">
+          <div>
+            <p class="section-kicker">Research Frame</p>
+            <h2>研究框架</h2>
+          </div>
+        </div>
+        <div id="strategy-axes" class="axis-grid"></div>
+      </section>
+
+      <section class="insights card">
+        <div class="section-head">
+          <div>
+            <p class="section-kicker">Current Read</p>
+            <h2>現階段判斷</h2>
+          </div>
+        </div>
+        <ul id="findings-list" class="insight-list"></ul>
+      </section>
+
+      <section class="dashboard card full-span">
+        <div class="section-head">
+          <div>
+            <p class="section-kicker">Market Map</p>
+            <h2>學校分布</h2>
+          </div>
+          <div class="chip-row" id="summary-chips"></div>
+        </div>
+        <div id="route-cards" class="route-grid"></div>
+      </section>
+
+      <section class="explorer card full-span">
+        <div class="section-head">
+          <div>
+            <p class="section-kicker">Explorer</p>
+            <h2>學校資料庫</h2>
+          </div>
+          <div class="section-note">
+            距離欄位以窩打老道 8 號為基準作直線粗略估算，用作第一輪篩選，不等同實際上學時間。
+          </div>
+        </div>
+
+        <div class="filters">
+          <label class="field">
+            <span>搜尋學校</span>
+            <input id="search-input" type="search" placeholder="中文名、英文名、地區、宗教" />
+          </label>
+          <label class="field">
+            <span>路線類別</span>
+            <select id="route-filter">
+              <option value="">全部</option>
+            </select>
+          </label>
+          <label class="field">
+            <span>地區</span>
+            <select id="district-filter">
+              <option value="">全部</option>
+            </select>
+          </label>
+          <label class="field">
+            <span>課程訊號</span>
+            <select id="curriculum-filter">
+              <option value="">全部</option>
+            </select>
+          </label>
+          <label class="field">
+            <span>距離油麻地</span>
+            <select id="distance-filter">
+              <option value="">不限</option>
+              <option value="5">5 km 內</option>
+              <option value="10">10 km 內</option>
+              <option value="15">15 km 內</option>
+            </select>
+          </label>
+          <label class="field">
+            <span>排序</span>
+            <select id="sort-filter">
+              <option value="distance">距離最近</option>
+              <option value="name">學校名稱</option>
+              <option value="district">地區</option>
+              <option value="route">路線類別</option>
+            </select>
+          </label>
+        </div>
+
+        <div class="compare-bar" id="compare-bar">
+          <div>
+            <strong>比較名單</strong>
+            <span id="compare-count">0 / 4</span>
+          </div>
+          <div id="compare-tags" class="compare-tags"></div>
+        </div>
+
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>比較</th>
+                <th>學校</th>
+                <th>路線</th>
+                <th>地區</th>
+                <th>距離</th>
+                <th>課程訊號</th>
+                <th>性別</th>
+                <th>網站</th>
+              </tr>
+            </thead>
+            <tbody id="school-tbody"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="compare-section card full-span">
+        <div class="section-head">
+          <div>
+            <p class="section-kicker">Comparison</p>
+            <h2>比較視窗</h2>
+          </div>
+        </div>
+        <div id="compare-grid" class="compare-grid empty-state">
+          先在上方資料庫勾選最多 4 間學校。
+        </div>
+      </section>
+
+      <section class="focus card full-span">
+        <div class="section-head">
+          <div>
+            <p class="section-kicker">Deep Dives</p>
+            <h2>重點學校研究</h2>
+          </div>
+        </div>
+        <div id="focus-profiles" class="focus-grid"></div>
+      </section>
+
+      <section class="timeline card">
+        <div class="section-head">
+          <div>
+            <p class="section-kicker">Action Plan</p>
+            <h2>升小節奏</h2>
+          </div>
+        </div>
+        <div id="timeline-list" class="timeline-list"></div>
+      </section>
+
+      <section class="sources card">
+        <div class="section-head">
+          <div>
+            <p class="section-kicker">Sources</p>
+            <h2>主要來源</h2>
+          </div>
+        </div>
+        <ul id="source-list" class="source-list"></ul>
+        <h3 class="subhead">外部研究連結</h3>
+        <ul id="external-list" class="source-list"></ul>
+      </section>
+    </main>
+  </div>
+
+  <script src="./data/site-config.js"></script>
+  <script src="./data/research.js"></script>
+  <script src="./data/schools.js"></script>
+  <script src="./app.js"></script>
+</body>
+</html>
