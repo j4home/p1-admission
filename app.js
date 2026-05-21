@@ -49,6 +49,7 @@
     summaryChips: document.getElementById("summary-chips"),
     routeCards: document.getElementById("route-cards"),
     priorityLists: document.getElementById("priority-lists"),
+    shortlistGrid: document.getElementById("shortlist-grid"),
     strategyAxes: document.getElementById("strategy-axes"),
     findingsList: document.getElementById("findings-list"),
     timelineList: document.getElementById("timeline-list"),
@@ -150,6 +151,28 @@
         </div>
       `;
       els.priorityLists.appendChild(card);
+    });
+  }
+
+  function renderShortlist() {
+    if (!els.shortlistGrid || !research.phaseOneShortlist) return;
+    els.shortlistGrid.innerHTML = "";
+
+    research.phaseOneShortlist.forEach((item) => {
+      const card = document.createElement("article");
+      card.className = "shortlist-card";
+      card.innerHTML = `
+        <p class="section-kicker">${item.bucket}</p>
+        <h3>${item.schoolName}</h3>
+        <p><strong>路線：</strong>${item.routeType}</p>
+        <div class="shortlist-meta">
+          <div><strong>入選原因：</strong><p>${item.whyShortlisted}</p></div>
+          <div><strong>英語訊號：</strong><p>${item.englishSignal}</p></div>
+          <div><strong>較適合：</strong><p>${item.fit}</p></div>
+          <div><strong>要留意：</strong><p>${item.watchout}</p></div>
+        </div>
+      `;
+      els.shortlistGrid.appendChild(card);
     });
   }
 
@@ -493,6 +516,7 @@
   initGate();
   renderTop();
   renderStrategy();
+  renderShortlist();
   initFilters();
   bindFilters();
   renderPriorityLists();

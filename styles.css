@@ -217,7 +217,8 @@ h1 {
 .route-grid,
 .focus-grid,
 .compare-grid,
-.priority-grid {
+.priority-grid,
+.shortlist-grid {
   display: grid;
   gap: 14px;
 }
@@ -238,6 +239,10 @@ h1 {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
+.shortlist-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
 .compare-grid {
   grid-template-columns: repeat(4, minmax(0, 1fr));
 }
@@ -246,7 +251,8 @@ h1 {
 .route-card,
 .focus-card,
 .compare-card,
-.priority-card {
+.priority-card,
+.shortlist-card {
   border-radius: var(--radius-md);
   padding: 18px;
   background: rgba(255, 255, 255, 0.72);
@@ -338,6 +344,28 @@ h1 {
   display: block;
   color: var(--muted);
   line-height: 1.5;
+}
+
+.shortlist-card h3 {
+  margin: 0 0 10px;
+  font-size: 1.12rem;
+}
+
+.shortlist-card p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.65;
+}
+
+.shortlist-meta {
+  display: grid;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.shortlist-meta div {
+  padding-top: 8px;
+  border-top: 1px dashed rgba(31, 42, 44, 0.12);
 }
 
 .insight-list,
@@ -521,6 +549,10 @@ a {
     grid-template-columns: 1fr;
   }
 
+  .shortlist-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .filters {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
@@ -551,6 +583,7 @@ a {
   .route-grid,
   .compare-grid,
   .priority-grid,
+  .shortlist-grid,
   .filters {
     grid-template-columns: 1fr;
   }

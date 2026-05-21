@@ -112,6 +112,116 @@ window.__PROJECT_RESEARCH__ = {
         "家長提供 Google Doc 研究摘要（已下載到本地 source_google_doc.txt）"
     }
   ],
+  phaseOneShortlist: [
+    {
+      schoolName: "保良局陳守仁小學",
+      routeType: "直資小學",
+      bucket: "核心近距離",
+      englishSignal: "英語環境強，校本英文課程成熟，並設第三語言。",
+      whyShortlisted: "距離你家極近，而且屬本地直資中很有代表性的高語文、高活動密度、高家長關注度學校。",
+      fit: "適合重視英文、想要高資源但仍保留本地課程主體的家庭。",
+      watchout: "競爭感與整體節奏不低，家長要留意孩子是否適應高要求與多語環境。"
+    },
+    {
+      schoolName: "優才(楊殷有娣)書院",
+      routeType: "直資小學",
+      bucket: "核心近距離",
+      englishSignal: "英語重閱讀、討論與 inquiry-based learning，並延伸至第三語言。",
+      whyShortlisted: "地點近、英語取向清晰、一條龍連續性強，是你目前條件下很值得優先看的代表性直資。",
+      fit: "適合想要英語強、課程較活、又希望有較完整中學承接路線的家庭。",
+      watchout: "要分清你喜歡的是『英語 + 活動 + 一條龍』，還是其整體教育哲學；兩者不一定完全相同。"
+    },
+    {
+      schoolName: "拔萃男書院附屬小學 / 拔萃男書院",
+      routeType: "直資小學",
+      bucket: "核心近距離",
+      englishSignal: "官方資料明示屬英語小學，課程完整且與中學端銜接緊密。",
+      whyShortlisted: "若你要看『高英語 + 傳統精英 + through-train』路線，這是一個不能跳過的基準校。",
+      fit: "適合作為你們理解傳統頂尖直資模式的參考點。",
+      watchout: "男校，不適用於你女兒；但仍值得保留作比較標尺。"
+    },
+    {
+      schoolName: "拔萃女小學",
+      routeType: "一般私立小學",
+      bucket: "核心近距離",
+      englishSignal: "英語與傳統學術文化強，女校環境明確。",
+      whyShortlisted: "對女兒個案而言，比 DBSPD 更直接可比，亦能代表傳統高要求私校女校路線。",
+      fit: "適合想看『傳統私校名校文化 + 女校氛圍 + 強語文』是否符合家庭想像。",
+      watchout: "要留意你們想要的是傳統精英文化，還是更開放、多元、較少比較壓力的學習環境。"
+    },
+    {
+      schoolName: "香港培正小學",
+      routeType: "一般私立小學",
+      bucket: "核心近距離",
+      englishSignal: "不是最典型的全英沉浸，但屬高質傳統私校，比較適合作為中文/英文平衡路線參照。",
+      whyShortlisted: "地點近、品牌強、文化穩定，值得拿來跟英語更激進的學校對照。",
+      fit: "適合想保留較深中文基礎與傳統學校文化的家庭作對照。",
+      watchout: "若你把『英語語境』放得很前，培正未必會是第一梯隊，而更像是平衡型參考校。"
+    },
+    {
+      schoolName: "保良局蔡繼有學校",
+      routeType: "私立獨立學校",
+      bucket: "核心近距離",
+      englishSignal: "雙語沉浸明顯，後段接 IGCSE / IBDP，英語與國際路徑清晰。",
+      whyShortlisted: "它是你目前研究方向中最典型的『本地家庭也會考慮的國際化私立獨立學校』。",
+      fit: "適合重視英語、國際課程、閱讀文化與 12 年連續路徑的家庭。",
+      watchout: "學費與理念要求較高，家長要確認自己是否真心認同其教育哲學，而非只被 IB 路線吸引。"
+    },
+    {
+      schoolName: "聖保羅男女中學附屬小學",
+      routeType: "一般私立小學",
+      bucket: "高英語 / 傳統精英",
+      englishSignal: "語文與整體學術要求高，並有明確中學端承接想像。",
+      whyShortlisted: "如果你們會認真考慮傳統頂尖英文私校，這是一所很值得放入第一輪比較的指標校。",
+      fit: "適合重視英語、學術、校譽與傳統名校網絡的家庭。",
+      watchout: "位置較遠，交通與日常時間成本要計清楚；也要留意孩子是否適應較高期望。"
+    },
+    {
+      schoolName: "港大同學會小學",
+      routeType: "直資小學",
+      bucket: "高英語 / 創新取向",
+      englishSignal: "學校一向以活學、思辨與多元課程著稱，英語與跨學科元素明顯。",
+      whyShortlisted: "它代表另一種不是純傳統精英、但同樣很受重視的直資路線。",
+      fit: "適合想要英語、活動教學、校本設計感強一些的家庭。",
+      watchout: "地點較遠，而且風格與傳統操練型學校差異大，家長需要知道自己真正偏好哪一種。"
+    },
+    {
+      schoolName: "香港浸會大學附屬學校王錦輝中小學",
+      routeType: "直資小學",
+      bucket: "高英語 / 路線連續",
+      englishSignal: "英語主導，中小學一體，並有較明顯路徑分流與延伸空間。",
+      whyShortlisted: "它是『英語 + 一體化校園 + 長線升學規劃』的一個很典型樣本。",
+      fit: "適合想把小學與中學一併考慮的家庭。",
+      watchout: "沙田交通成本較高；如果日常 commute 對家庭壓力大，可能會拉低整體匹配度。"
+    },
+    {
+      schoolName: "Stamford American School Hong Kong",
+      routeType: "一般私立小學",
+      bucket: "非本地課程延伸",
+      englishSignal: "英文語境強，較接近國際課程市場的家長想像。",
+      whyShortlisted: "雖然在資料集裡屬 private，但它對你而言實際上更接近『非本地課程市場』的重要參照。",
+      fit: "適合想測試自己是否其實更偏向國際學校式英語教育的家庭。",
+      watchout: "要分清你要的是『英文』還是『整套非本地課程教育文化』，兩者不完全相同。"
+    },
+    {
+      schoolName: "滬江維多利亞學校",
+      routeType: "私立獨立學校",
+      bucket: "非本地課程延伸",
+      englishSignal: "官方資料顯示其 IB 連續性與雙語特徵明確。",
+      whyShortlisted: "若你把非本地課程放進主戰場，它是很值得與蔡繼有、Stamford 放在一起看的另一種模型。",
+      fit: "適合重視雙語、IB continuum 與國際視野的家庭。",
+      watchout: "地點較遠，且其 bilingual/IB 模式與傳統本地名校邏輯很不同。"
+    },
+    {
+      schoolName: "漢師德萃學校",
+      routeType: "一般私立小學",
+      bucket: "近距離新型私校",
+      englishSignal: "位置近，近年常被家長放進英語私校比較池。",
+      whyShortlisted: "它在地理上非常值得先看，因為交通成本低，適合做『近校是否已足夠滿足你們需求』的現實檢查。",
+      fit: "適合作為近距離、較新型私校路線的第一輪觀察點。",
+      watchout: "要特別逐校核實其實際語境、課程成熟度與長線升學表現，不能單看位置與宣傳。"
+    }
+  ],
   externalResearchLinks: [
     {
       label: "Gemini 分享 1",
