@@ -57,6 +57,8 @@
     phaseFourGrid: document.getElementById("phase-four-grid"),
     phaseFiveGrid: document.getElementById("phase-five-grid"),
     phaseSixGrid: document.getElementById("phase-six-grid"),
+    childScenariosGrid: document.getElementById("child-scenarios-grid"),
+    openDayGrid: document.getElementById("open-day-grid"),
     strategyAxes: document.getElementById("strategy-axes"),
     findingsList: document.getElementById("findings-list"),
     timelineList: document.getElementById("timeline-list"),
@@ -318,6 +320,36 @@
         <p><strong>現階段角色：</strong>${item.currentRole}</p>
       `;
       els.phaseSixGrid.appendChild(card);
+    });
+  }
+
+  function renderChildScenarios() {
+    if (!els.childScenariosGrid || !research.childScenarioComparison) return;
+    els.childScenariosGrid.innerHTML = "";
+    research.childScenarioComparison.forEach((item) => {
+      const card = document.createElement("article");
+      card.className = "agenda-card";
+      card.innerHTML = `
+        <h3>${item.scenario}</h3>
+        <p><strong>較可能合適：</strong>${item.likelyFit}</p>
+        <p><strong>原因：</strong>${item.why}</p>
+        <p><strong>提醒：</strong>${item.caution}</p>
+      `;
+      els.childScenariosGrid.appendChild(card);
+    });
+  }
+
+  function renderOpenDayChecklist() {
+    if (!els.openDayGrid || !research.openDayChecklist) return;
+    els.openDayGrid.innerHTML = "";
+    research.openDayChecklist.forEach((item) => {
+      const card = document.createElement("article");
+      card.className = "agenda-card";
+      card.innerHTML = `
+        <h3>${item.title}</h3>
+        <p>${item.detail}</p>
+      `;
+      els.openDayGrid.appendChild(card);
     });
   }
 
@@ -671,6 +703,8 @@
   renderPhaseFourComparison();
   renderPhaseFiveComparison();
   renderPhaseSixComparison();
+  renderChildScenarios();
+  renderOpenDayChecklist();
   initFilters();
   bindFilters();
   renderPriorityLists();
