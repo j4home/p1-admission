@@ -878,6 +878,38 @@ window.__PROJECT_RESEARCH__ = {
       checkpoint: "孩子講英文和中文都保持自然；家長對文化匹配的表達已很穩。"
     }
   ],
+  interviewDayChecklist: [
+    {
+      phase: "前一晚",
+      childItems: "早點休息，不再做高強度練習；只做 5 至 10 分鐘輕鬆對答，保持自然感。",
+      parentItems: "檢查申請文件、面試通知、證件、文具和路線；衣服鞋襪先準備好。",
+      practicalNote: "不要臨睡前突然加長練習，也不要臨時改一大堆答案。"
+    },
+    {
+      phase: "出門前",
+      childItems: "吃簡單熟悉的早餐，穿著整齊舒服；出門前只輕輕提醒『先聽清楚、慢慢答』。",
+      parentItems: "預留足夠交通時間，最好比原定早 15 至 20 分鐘到；再看一次所需文件是否齊。",
+      practicalNote: "避免在門口或車上不停問問題，免得把孩子情緒拉緊。"
+    },
+    {
+      phase: "到校等候時",
+      childItems: "讓她保持輕鬆，不用不停複習；可輕鬆聊天、看看周圍環境、喝一小口水。",
+      parentItems: "觀察學校流程和現場氣氛，但不要把自己的緊張傳給孩子。",
+      practicalNote: "如果孩子主動說話，跟她自然應對；如果她安靜，也不用逼她熱身。"
+    },
+    {
+      phase: "面試前最後 3 分鐘",
+      childItems: "只留一句提醒：先聽清楚、慢慢講、做完再看老師。",
+      parentItems: "自己也只保留一兩句穩定說話，不再塞新指示。",
+      practicalNote: "這一刻最重要是穩，不是再教。"
+    },
+    {
+      phase: "面試後離校",
+      childItems: "先肯定她有完成和有努力，不要立刻逐題檢討。",
+      parentItems: "簡單記下當天流程、問題類型、孩子狀態和自己感受，作日後參考。",
+      practicalNote: "若當天還有其他安排，先讓情緒回穩，不要把一次面試放大成整個升學成敗。"
+    }
+  ],
   homePracticeActivities: [
     {
       schoolGroup: "陳守仁 / 通用",

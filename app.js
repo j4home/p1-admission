@@ -69,6 +69,7 @@
     homePracticeGrid: document.getElementById("home-practice-grid"),
     studentInterviewQaGrid: document.getElementById("student-interview-qa-grid"),
     countdownGrid: document.getElementById("countdown-grid"),
+    interviewDayGrid: document.getElementById("interview-day-grid"),
     parentInterviewGrid: document.getElementById("parent-interview-grid"),
     parentFaqGrid: document.getElementById("parent-faq-grid"),
     parentMockQaGrid: document.getElementById("parent-mock-qa-grid"),
@@ -518,6 +519,24 @@
     });
   }
 
+  function renderInterviewDayChecklist() {
+    if (!els.interviewDayGrid || !research.interviewDayChecklist) return;
+    els.interviewDayGrid.innerHTML = "";
+
+    research.interviewDayChecklist.forEach((item) => {
+      const card = document.createElement("article");
+      card.className = "agenda-card";
+      card.innerHTML = `
+        <p class="section-kicker">${item.phase}</p>
+        <h3>當天要留意的事</h3>
+        <p><strong>孩子：</strong>${item.childItems}</p>
+        <p><strong>家長：</strong>${item.parentItems}</p>
+        <p><strong>提醒：</strong>${item.practicalNote}</p>
+      `;
+      els.interviewDayGrid.appendChild(card);
+    });
+  }
+
   function renderParentInterviewPrep() {
     if (!els.parentInterviewGrid || !research.parentInterviewPrep) return;
     els.parentInterviewGrid.innerHTML = "";
@@ -948,6 +967,7 @@
   renderHomePracticeActivities();
   renderStudentInterviewQa();
   renderThirtyDayCountdown();
+  renderInterviewDayChecklist();
   renderParentInterviewPrep();
   renderParentFaqDrafts();
   renderParentMockQa();
