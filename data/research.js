@@ -763,6 +763,56 @@ window.__PROJECT_RESEARCH__ = {
       useWhen: "適合回應雙語平衡、語境和家庭語文觀的問題。"
     }
   ],
+  studentInterviewQa: [
+    {
+      schoolName: "保良局陳守仁小學",
+      questionType: "自我介紹 / 日常表達",
+      samplePrompt: "Please tell me about yourself. / 你最喜歡做甚麼？",
+      answerDirection: "不需要背很長，只要自然講出姓名、喜歡閱讀/畫畫/音樂或運動其中兩三樣，再講一句為甚麼喜歡。",
+      coachTip: "重點是語氣自然、眼神穩、講完停一停，不要一口氣衝太快。",
+      fitForDaughter: "她本身肯講、英語表達強，這類題型是可以先建立信心的。"
+    },
+    {
+      schoolName: "保良局陳守仁小學",
+      questionType: "聽指令 / 遊戲任務",
+      samplePrompt: "先把紅色積木放左邊，再把小熊放在盒子後面。",
+      answerDirection: "先聽完，再做，不需要一邊聽一邊急着行動；做完可望一望老師，表示已完成。",
+      coachTip: "這類不是考快，而是考穩。對她最重要是忍住第一時間衝出去做。",
+      fitForDaughter: "她活力強，這類題要把優勢變成有秩序的表現。"
+    },
+    {
+      schoolName: "優才(楊殷有娣)書院",
+      questionType: "閱讀後表達 / 思考題",
+      samplePrompt: "你看完這個故事後，最喜歡哪個角色？為甚麼？",
+      answerDirection: "先講答案，再講一個原因，最後可加一個自己的想法，例如『如果是我，我會怎樣做』。",
+      coachTip: "幫她練『一個答案 + 一個理由』，不用一開始就講很多。",
+      fitForDaughter: "她很愛閱讀，也會有自己觀點，這類題型很有機會成為優勢。"
+    },
+    {
+      schoolName: "優才(楊殷有娣)書院",
+      questionType: "開放式提問 / 批判思考",
+      samplePrompt: "如果你可以改變課室裡的一樣東西，你會改甚麼？",
+      answerDirection: "先講想改甚麼，再講為甚麼，最後講改了之後有甚麼好處。",
+      coachTip: "這類題最怕答得太跳。可用『我會改…因為…這樣就可以…』的結構。",
+      fitForDaughter: "她本身會主動提出修改意見，這是很對路的。"
+    },
+    {
+      schoolName: "保良局蔡繼有學校",
+      questionType: "雙語表達 / 興趣分享",
+      samplePrompt: "Tell me about a book or activity you like. 之後再用中文補充一點。",
+      answerDirection: "先用英文講最喜歡的書、音樂或畫畫，再用中文補一句感受或原因，重點是自然切換，不用太長。",
+      coachTip: "這類題不是看她講多少，而是看她是否自在、連貫和有內容。",
+      fitForDaughter: "她英語、閱讀和多元興趣都很有基礎，這類題能展示全人輪廓。"
+    },
+    {
+      schoolName: "保良局蔡繼有學校",
+      questionType: "生活經驗 / 全人特質",
+      samplePrompt: "你最近學了甚麼新東西？遇到困難時怎樣做？",
+      answerDirection: "可從游泳、音樂、畫畫或體操選一樣，講『我在學…一開始覺得…後來我…』，讓老師聽到她如何面對學習。",
+      coachTip: "選她真熟悉的經驗最重要，不要為了精彩而講得太假。",
+      fitForDaughter: "她活動經驗真實而多元，只要講得有順序，就很有說服力。"
+    }
+  ],
   homePracticeActivities: [
     {
       schoolGroup: "陳守仁 / 通用",

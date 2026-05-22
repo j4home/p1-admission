@@ -67,6 +67,7 @@
     coreInterviewGrid: document.getElementById("core-interview-grid"),
     weeklyPracticeGrid: document.getElementById("weekly-practice-grid"),
     homePracticeGrid: document.getElementById("home-practice-grid"),
+    studentInterviewQaGrid: document.getElementById("student-interview-qa-grid"),
     parentInterviewGrid: document.getElementById("parent-interview-grid"),
     parentFaqGrid: document.getElementById("parent-faq-grid"),
     parentMockQaGrid: document.getElementById("parent-mock-qa-grid"),
@@ -477,6 +478,24 @@
         <p><strong>目標：</strong>${item.goal}</p>
       `;
       els.homePracticeGrid.appendChild(card);
+    });
+  }
+
+  function renderStudentInterviewQa() {
+    if (!els.studentInterviewQaGrid || !research.studentInterviewQa) return;
+    els.studentInterviewQaGrid.innerHTML = "";
+
+    research.studentInterviewQa.forEach((item) => {
+      const card = document.createElement("article");
+      card.className = "agenda-card";
+      card.innerHTML = `
+        <p class="section-kicker">${item.schoolName} · ${item.questionType}</p>
+        <h3>${item.samplePrompt}</h3>
+        <p><strong>答題方向：</strong>${item.answerDirection}</p>
+        <p><strong>家長提醒：</strong>${item.coachTip}</p>
+        <p><strong>和你女兒的連結：</strong>${item.fitForDaughter}</p>
+      `;
+      els.studentInterviewQaGrid.appendChild(card);
     });
   }
 
@@ -908,6 +927,7 @@
   renderCoreInterviewPlan();
   renderWeeklyPracticePlan();
   renderHomePracticeActivities();
+  renderStudentInterviewQa();
   renderParentInterviewPrep();
   renderParentFaqDrafts();
   renderParentMockQa();
