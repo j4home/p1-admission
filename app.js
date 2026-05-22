@@ -50,6 +50,7 @@
     routeCards: document.getElementById("route-cards"),
     priorityLists: document.getElementById("priority-lists"),
     shortlistGrid: document.getElementById("shortlist-grid"),
+    extendedShortlistGrid: document.getElementById("extended-shortlist-grid"),
     agendaGrid: document.getElementById("agenda-grid"),
     workPlanGrid: document.getElementById("workplan-grid"),
     latestIntelGrid: document.getElementById("latest-intel-grid"),
@@ -196,6 +197,27 @@
         </div>
       `;
       els.shortlistGrid.appendChild(card);
+    });
+  }
+
+  function renderExtendedShortlist() {
+    if (!els.extendedShortlistGrid || !research.extendedShortlist) return;
+    els.extendedShortlistGrid.innerHTML = "";
+
+    research.extendedShortlist.forEach((item) => {
+      const card = document.createElement("article");
+      card.className = "shortlist-card";
+      card.innerHTML = `
+        <p class="section-kicker">${item.bucket}</p>
+        <h3>${item.schoolName}</h3>
+        <p><strong>路線：</strong>${item.routeType}</p>
+        <div class="shortlist-meta">
+          <div><strong>入選原因：</strong><p>${item.whyShortlisted}</p></div>
+          <div><strong>較適合：</strong><p>${item.fit}</p></div>
+          <div><strong>要留意：</strong><p>${item.watchout}</p></div>
+        </div>
+      `;
+      els.extendedShortlistGrid.appendChild(card);
     });
   }
 
@@ -948,6 +970,7 @@
   renderTop();
   renderStrategy();
   renderShortlist();
+  renderExtendedShortlist();
   renderAgenda();
   renderWorkPlan();
   renderLatestIntel();
