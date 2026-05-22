@@ -45,8 +45,46 @@
       </div>
     </header>
 
+    <section class="workspace-nav card">
+      <div class="section-head">
+        <div>
+          <p class="section-kicker">Workspace View</p>
+          <h2>用哪個角度看這個網站</h2>
+        </div>
+        <div class="section-note" id="view-note">
+          先用較清楚的工作模式去看內容，避免一次過被所有研究資料淹沒。
+        </div>
+      </div>
+      <div class="view-switcher" id="view-switcher">
+        <button class="view-btn active" data-view="overview" type="button">總覽</button>
+        <button class="view-btn" data-view="strategy" type="button">研究比較</button>
+        <button class="view-btn" data-view="deadlines" type="button">重要日子</button>
+        <button class="view-btn" data-view="prep" type="button">面試準備</button>
+        <button class="view-btn" data-view="database" type="button">學校資料庫</button>
+        <button class="view-btn" data-view="all" type="button">顯示全部</button>
+      </div>
+      <div class="view-hints">
+        <div class="view-hint-card">
+          <strong>總覽</strong>
+          <span>先看 shortlist、孩子特質和現階段判斷。</span>
+        </div>
+        <div class="view-hint-card">
+          <strong>研究比較</strong>
+          <span>集中看研究框架、深挖和不同學校的比較層。</span>
+        </div>
+        <div class="view-hint-card">
+          <strong>重要日子</strong>
+          <span>專心追申請節奏、fact check 和開放日觀察。</span>
+        </div>
+        <div class="view-hint-card">
+          <strong>面試準備</strong>
+          <span>只看孩子、家長和面試前後的實戰準備。</span>
+        </div>
+      </div>
+    </section>
+
     <main class="content-grid">
-      <section class="priority card full-span">
+      <section class="priority card full-span view-section" data-view-scope="overview database">
         <div class="section-head">
           <div>
             <p class="section-kicker">Primary Pool</p>
@@ -64,7 +102,7 @@
         <div id="priority-lists" class="priority-grid"></div>
       </section>
 
-      <section class="shortlist card full-span">
+      <section class="shortlist card full-span view-section" data-view-scope="overview">
         <div class="section-head">
           <div>
             <p class="section-kicker">Phase 1 Shortlist</p>
@@ -77,7 +115,7 @@
         <div id="shortlist-grid" class="shortlist-grid"></div>
       </section>
 
-      <section class="shortlist card full-span">
+      <section class="shortlist card full-span view-section" data-view-scope="overview">
         <div class="section-head">
           <div>
             <p class="section-kicker">Round Two</p>
@@ -90,7 +128,7 @@
         <div id="extended-shortlist-grid" class="shortlist-grid"></div>
       </section>
 
-      <section class="research-agenda card full-span">
+      <section class="research-agenda card full-span view-section" data-view-scope="strategy">
         <div class="section-head">
           <div>
             <p class="section-kicker">Research Agenda</p>
@@ -103,7 +141,7 @@
         <div id="agenda-grid" class="agenda-grid"></div>
       </section>
 
-      <section class="research-plan card full-span">
+      <section class="research-plan card full-span view-section" data-view-scope="strategy">
         <div class="section-head">
           <div>
             <p class="section-kicker">Work Plan</p>
@@ -116,7 +154,7 @@
         <div id="workplan-grid" class="agenda-grid"></div>
       </section>
 
-      <section class="latest-intel card full-span">
+      <section class="latest-intel card full-span view-section" data-view-scope="deadlines">
         <div class="section-head">
           <div>
             <p class="section-kicker">Fact Check</p>
@@ -129,7 +167,7 @@
         <div id="latest-intel-grid" class="agenda-grid"></div>
       </section>
 
-      <section class="admissions-tracker card full-span">
+      <section class="admissions-tracker card full-span view-section" data-view-scope="deadlines">
         <div class="section-head">
           <div>
             <p class="section-kicker">Admissions Tracker</p>
@@ -142,7 +180,7 @@
         <div id="admissions-grid" class="agenda-grid"></div>
       </section>
 
-      <section class="overview card">
+      <section class="overview card view-section" data-view-scope="strategy">
         <div class="section-head">
           <div>
             <p class="section-kicker">Research Frame</p>
@@ -152,7 +190,7 @@
         <div id="strategy-axes" class="axis-grid"></div>
       </section>
 
-      <section class="insights card">
+      <section class="insights card view-section" data-view-scope="overview strategy">
         <div class="section-head">
           <div>
             <p class="section-kicker">Current Read</p>
@@ -162,7 +200,7 @@
         <ul id="findings-list" class="insight-list"></ul>
       </section>
 
-      <section class="child-profile card full-span">
+      <section class="child-profile card full-span view-section" data-view-scope="overview">
         <div class="section-head">
           <div>
             <p class="section-kicker">Child Profile</p>
@@ -175,7 +213,7 @@
         <div id="child-profile-grid" class="agenda-grid"></div>
       </section>
 
-      <section class="dashboard card full-span">
+      <section class="dashboard card full-span view-section" data-view-scope="strategy database">
         <div class="section-head">
           <div>
             <p class="section-kicker">Market Map</p>
@@ -186,7 +224,7 @@
         <div id="route-cards" class="route-grid"></div>
       </section>
 
-      <section class="explorer card full-span">
+      <section class="explorer card full-span view-section" data-view-scope="database">
         <div class="section-head">
           <div>
             <p class="section-kicker">Explorer</p>
@@ -267,7 +305,7 @@
         </div>
       </section>
 
-      <section class="compare-section card full-span">
+      <section class="compare-section card full-span view-section" data-view-scope="database strategy">
         <div class="section-head">
           <div>
             <p class="section-kicker">Comparison</p>
@@ -279,7 +317,7 @@
         </div>
       </section>
 
-      <section class="focus card full-span">
+      <section class="focus card full-span view-section" data-view-scope="strategy">
         <div class="section-head">
           <div>
             <p class="section-kicker">Deep Dives</p>
@@ -289,7 +327,7 @@
         <div id="focus-profiles" class="focus-grid"></div>
       </section>
 
-      <section class="phase-three card full-span">
+      <section class="phase-three card full-span view-section" data-view-scope="strategy">
         <div class="section-head">
           <div>
             <p class="section-kicker">Phase 3 Comparison</p>
@@ -302,7 +340,7 @@
         <div id="phase-three-grid" class="agenda-grid"></div>
       </section>
 
-      <section class="phase-four card full-span">
+      <section class="phase-four card full-span view-section" data-view-scope="strategy prep">
         <div class="section-head">
           <div>
             <p class="section-kicker">Phase 4 Parent Lens</p>
@@ -315,7 +353,7 @@
         <div id="phase-four-grid" class="agenda-grid"></div>
       </section>
 
-      <section class="phase-five card full-span">
+      <section class="phase-five card full-span view-section" data-view-scope="strategy prep">
         <div class="section-head">
           <div>
             <p class="section-kicker">Phase 5 Prep Layer</p>
@@ -328,7 +366,7 @@
         <div id="phase-five-grid" class="agenda-grid"></div>
       </section>
 
-      <section class="phase-six card full-span">
+      <section class="phase-six card full-span view-section" data-view-scope="overview strategy">
         <div class="section-head">
           <div>
             <p class="section-kicker">Phase 6 Match</p>
@@ -341,7 +379,7 @@
         <div id="phase-six-grid" class="agenda-grid"></div>
       </section>
 
-      <section class="shortlist-matrix card full-span">
+      <section class="shortlist-matrix card full-span view-section" data-view-scope="overview strategy">
         <div class="section-head">
           <div>
             <p class="section-kicker">Decision Matrix</p>
@@ -354,7 +392,7 @@
         <div id="shortlist-matrix-grid" class="agenda-grid"></div>
       </section>
 
-      <section class="child-scenarios card full-span">
+      <section class="child-scenarios card full-span view-section" data-view-scope="overview strategy">
         <div class="section-head">
           <div>
             <p class="section-kicker">Child Scenarios</p>
@@ -367,7 +405,7 @@
         <div id="child-scenarios-grid" class="agenda-grid"></div>
       </section>
 
-      <section class="open-day card full-span">
+      <section class="open-day card full-span view-section" data-view-scope="deadlines strategy">
         <div class="section-head">
           <div>
             <p class="section-kicker">Open Day Lens</p>
@@ -380,7 +418,7 @@
         <div id="open-day-grid" class="agenda-grid"></div>
       </section>
 
-      <section class="portfolio-prep card full-span">
+      <section class="portfolio-prep card full-span view-section" data-view-scope="deadlines prep">
         <div class="section-head">
           <div>
             <p class="section-kicker">Portfolio Prep</p>
@@ -393,7 +431,7 @@
         <div id="portfolio-grid" class="agenda-grid"></div>
       </section>
 
-      <section class="interview-lens card full-span">
+      <section class="interview-lens card full-span view-section" data-view-scope="prep">
         <div class="section-head">
           <div>
             <p class="section-kicker">Interview Lens</p>
@@ -406,7 +444,7 @@
         <div id="interview-lens-grid" class="agenda-grid"></div>
       </section>
 
-      <section class="core-interview card full-span">
+      <section class="core-interview card full-span view-section" data-view-scope="prep">
         <div class="section-head">
           <div>
             <p class="section-kicker">Core Interview Plan</p>
@@ -419,7 +457,7 @@
         <div id="core-interview-grid" class="agenda-grid"></div>
       </section>
 
-      <section class="weekly-practice card full-span">
+      <section class="weekly-practice card full-span view-section" data-view-scope="prep">
         <div class="section-head">
           <div>
             <p class="section-kicker">Weekly Practice</p>
@@ -432,7 +470,7 @@
         <div id="weekly-practice-grid" class="agenda-grid"></div>
       </section>
 
-      <section class="home-practice card full-span">
+      <section class="home-practice card full-span view-section" data-view-scope="prep">
         <div class="section-head">
           <div>
             <p class="section-kicker">Home Practice</p>
@@ -445,7 +483,7 @@
         <div id="home-practice-grid" class="agenda-grid"></div>
       </section>
 
-      <section class="student-interview-qa card full-span">
+      <section class="student-interview-qa card full-span view-section" data-view-scope="prep">
         <div class="section-head">
           <div>
             <p class="section-kicker">Student Interview Q&A</p>
@@ -458,7 +496,7 @@
         <div id="student-interview-qa-grid" class="agenda-grid"></div>
       </section>
 
-      <section class="countdown-plan card full-span">
+      <section class="countdown-plan card full-span view-section" data-view-scope="prep deadlines">
         <div class="section-head">
           <div>
             <p class="section-kicker">30-Day Countdown</p>
@@ -471,7 +509,7 @@
         <div id="countdown-grid" class="agenda-grid"></div>
       </section>
 
-      <section class="interview-day card full-span">
+      <section class="interview-day card full-span view-section" data-view-scope="prep">
         <div class="section-head">
           <div>
             <p class="section-kicker">Interview Day</p>
@@ -484,7 +522,7 @@
         <div id="interview-day-grid" class="agenda-grid"></div>
       </section>
 
-      <section class="parent-interview card full-span">
+      <section class="parent-interview card full-span view-section" data-view-scope="prep">
         <div class="section-head">
           <div>
             <p class="section-kicker">Parent Interview Prep</p>
@@ -497,7 +535,7 @@
         <div id="parent-interview-grid" class="agenda-grid"></div>
       </section>
 
-      <section class="parent-faq card full-span">
+      <section class="parent-faq card full-span view-section" data-view-scope="prep">
         <div class="section-head">
           <div>
             <p class="section-kicker">Parent FAQ Drafts</p>
@@ -510,7 +548,7 @@
         <div id="parent-faq-grid" class="agenda-grid"></div>
       </section>
 
-      <section class="parent-mock-qa card full-span">
+      <section class="parent-mock-qa card full-span view-section" data-view-scope="prep">
         <div class="section-head">
           <div>
             <p class="section-kicker">Parent Mock Q&A</p>
@@ -523,7 +561,7 @@
         <div id="parent-mock-qa-grid" class="agenda-grid"></div>
       </section>
 
-      <section class="timeline card">
+      <section class="timeline card view-section" data-view-scope="overview deadlines">
         <div class="section-head">
           <div>
             <p class="section-kicker">Action Plan</p>
@@ -533,7 +571,7 @@
         <div id="timeline-list" class="timeline-list"></div>
       </section>
 
-      <section class="sources card">
+      <section class="sources card view-section" data-view-scope="strategy deadlines">
         <div class="section-head">
           <div>
             <p class="section-kicker">Sources</p>

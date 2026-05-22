@@ -42,6 +42,15 @@
   const schools = schoolData.schools.slice();
   const compareSet = new Set();
   let currentPreset = "core";
+  let currentView = "overview";
+  const viewNotes = {
+    overview: "先看最重要的 shortlist、孩子特質、現階段判斷和整體節奏。",
+    strategy: "集中看研究框架、逐校深挖、比較層和決策判斷。",
+    deadlines: "只看已核實消息、申請節奏、開放日和要追的重要日子。",
+    prep: "專心看孩子和家長的面試準備，不被其他資料分心。",
+    database: "需要大範圍比較時，再進入學校資料庫和比較視窗。",
+    all: "一次顯示全部內容，適合之後全面 revisit。"
+  };
 
   const els = {
     total: document.getElementById("stat-total"),
@@ -92,6 +101,8 @@
     sortFilter: document.getElementById("sort-filter"),
     presetButtons: [...document.querySelectorAll(".preset-btn")]
   };
+  const viewButtons = [...document.querySelectorAll(".view-btn")];
+  const viewSections = [...document.querySelectorAll(".view-section")];
 
   function visibleRouteSet() {
     switch (currentPreset) {
@@ -898,6 +909,31 @@
     });
   }
 
+  function applyView() {
+    const noteEl = document.getElementById("view-note");
+    if (noteEl) noteEl.textContent = viewNotes[currentView] || "";
+
+    viewButtons.forEach((button) => {
+      button.classList.toggle("active", button.dataset.view === currentView);
+    });
+
+    viewSections.forEach((section) => {
+      const scopes = (section.dataset.viewScope || "").split(/\s+/).filter(Boolean);
+      const show = currentView === "all" || scopes.includes(currentView);
+      section.classList.toggle("is-hidden", !show);
+    });
+  }
+
+  function bindViews() {
+    viewButtons.forEach((button) => {
+      button.addEventListener("click", () => {
+        currentView = button.dataset.view;
+        applyView();
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      });
+    });
+  }
+
   function initFilters() {
     uniqueValues("routeGroup").forEach((value) => {
       const option = document.createElement("option");
@@ -996,6 +1032,8 @@
   renderParentMockQa();
   initFilters();
   bindFilters();
+  bindViews();
+  applyView();
   renderPriorityLists();
   renderTable();
   renderCompare();
