@@ -226,11 +226,8 @@ h1 {
 
 #admissions-grid {
   display: grid;
-  grid-auto-flow: column;
-  grid-auto-columns: minmax(260px, 320px);
   gap: 16px;
-  overflow-x: auto;
-  padding-bottom: 12px;
+  padding-left: 22px;
   align-items: stretch;
   position: relative;
 }
@@ -238,11 +235,11 @@ h1 {
 #admissions-grid::before {
   content: "";
   position: absolute;
-  left: 0;
-  right: 0;
-  top: 38px;
-  height: 2px;
-  background: linear-gradient(90deg, rgba(15, 108, 93, 0.12), rgba(15, 108, 93, 0.38), rgba(15, 108, 93, 0.12));
+  left: 14px;
+  top: 6px;
+  bottom: 6px;
+  width: 2px;
+  background: linear-gradient(180deg, rgba(15, 108, 93, 0.12), rgba(15, 108, 93, 0.38), rgba(15, 108, 93, 0.12));
 }
 
 .axis-grid {
@@ -289,7 +286,7 @@ h1 {
 
 .timeline-card {
   position: relative;
-  margin-top: 18px;
+  margin-top: 0;
 }
 
 .timeline-dot {
@@ -299,8 +296,8 @@ h1 {
   background: var(--accent);
   border: 3px solid #f4efe6;
   position: absolute;
-  top: -25px;
-  left: 18px;
+  top: 24px;
+  left: -31px;
   box-shadow: 0 0 0 2px rgba(15, 108, 93, 0.18);
 }
 
@@ -688,24 +685,6 @@ a {
   .agenda-grid,
   .filters {
     grid-template-columns: 1fr;
-  }
-
-  #admissions-grid {
-    grid-auto-flow: row;
-    grid-auto-columns: unset;
-    overflow-x: visible;
-  }
-
-  #admissions-grid::before {
-    display: none;
-  }
-
-  .timeline-card {
-    margin-top: 0;
-  }
-
-  .timeline-dot {
-    display: none;
   }
 
   .compare-bar,
