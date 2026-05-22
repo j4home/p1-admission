@@ -68,6 +68,7 @@
     weeklyPracticeGrid: document.getElementById("weekly-practice-grid"),
     homePracticeGrid: document.getElementById("home-practice-grid"),
     studentInterviewQaGrid: document.getElementById("student-interview-qa-grid"),
+    countdownGrid: document.getElementById("countdown-grid"),
     parentInterviewGrid: document.getElementById("parent-interview-grid"),
     parentFaqGrid: document.getElementById("parent-faq-grid"),
     parentMockQaGrid: document.getElementById("parent-mock-qa-grid"),
@@ -496,6 +497,24 @@
         <p><strong>和你女兒的連結：</strong>${item.fitForDaughter}</p>
       `;
       els.studentInterviewQaGrid.appendChild(card);
+    });
+  }
+
+  function renderThirtyDayCountdown() {
+    if (!els.countdownGrid || !research.thirtyDayCountdown) return;
+    els.countdownGrid.innerHTML = "";
+
+    research.thirtyDayCountdown.forEach((item) => {
+      const card = document.createElement("article");
+      card.className = "agenda-card";
+      card.innerHTML = `
+        <p class="section-kicker">${item.schoolName} · ${item.stage}</p>
+        <h3>這段時間應怎樣準備</h3>
+        <p><strong>孩子重點：</strong>${item.childFocus}</p>
+        <p><strong>家長重點：</strong>${item.parentFocus}</p>
+        <p><strong>檢查點：</strong>${item.checkpoint}</p>
+      `;
+      els.countdownGrid.appendChild(card);
     });
   }
 
@@ -928,6 +947,7 @@
   renderWeeklyPracticePlan();
   renderHomePracticeActivities();
   renderStudentInterviewQa();
+  renderThirtyDayCountdown();
   renderParentInterviewPrep();
   renderParentFaqDrafts();
   renderParentMockQa();

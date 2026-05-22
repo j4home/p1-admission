@@ -813,6 +813,71 @@ window.__PROJECT_RESEARCH__ = {
       fitForDaughter: "她活動經驗真實而多元，只要講得有順序，就很有說服力。"
     }
   ],
+  thirtyDayCountdown: [
+    {
+      schoolName: "保良局陳守仁小學",
+      stage: "面試前 30 至 21 日",
+      childFocus: "先穩定雙語自我介紹、日常問答和聽指令，不求講得多，只求自然穩定。",
+      parentFocus: "整理申請文件、想清楚選校原因，開始用短答版練家長主線。",
+      checkpoint: "孩子能自然講自己喜歡的書、活動和日常；家長能在 30 秒內講清選校原因。"
+    },
+    {
+      schoolName: "保良局陳守仁小學",
+      stage: "面試前 20 至 11 日",
+      childFocus: "加強小組互動、輪候、不搶答，以及兩步或三步指令遊戲。",
+      parentFocus: "練追問版答案，尤其是如何看待孩子活力、閱讀和學習秩序。",
+      checkpoint: "孩子遇到遊戲型題目時不急着搶先；家長答追問時不再愈講愈散。"
+    },
+    {
+      schoolName: "保良局陳守仁小學",
+      stage: "面試前 10 日內",
+      childFocus: "減少新練習，維持節奏感和睡眠，不把她練到疲。",
+      parentFocus: "只重溫核心主線，確認面試日 logistics、衣著和文件。",
+      checkpoint: "孩子保持自然、精神穩定；家長已不再臨時改很多答案。"
+    },
+    {
+      schoolName: "優才(楊殷有娣)書院",
+      stage: "面試前 30 至 21 日",
+      childFocus: "先練閱讀後表達和一題一理由，幫她把想法講得有結構。",
+      parentFocus: "整理你們對閱讀、思考、自主學習和長線發展的真實看法。",
+      checkpoint: "孩子能對一本書或一個故事講出喜歡甚麼和為甚麼；家長能自然講理念。"
+    },
+    {
+      schoolName: "優才(楊殷有娣)書院",
+      stage: "面試前 20 至 11 日",
+      childFocus: "加入開放式提問，例如『如果你可以改一樣東西』，練一個答案加一個原因。",
+      parentFocus: "練長線題和理念題，避免只談升學結果或學術名氣。",
+      checkpoint: "孩子開始能把想法講得較有順序；家長答理念題時不會太空泛。"
+    },
+    {
+      schoolName: "優才(楊殷有娣)書院",
+      stage: "面試前 10 日內",
+      childFocus: "以短時間閱讀、口頭分享和輕鬆對答維持手感。",
+      parentFocus: "只保留最真實的主線，不再加入新說法。",
+      checkpoint: "孩子答題仍然有興趣，不覺得被操練；家長答案聽起來像自己。"
+    },
+    {
+      schoolName: "保良局蔡繼有學校",
+      stage: "面試前 30 至 21 日",
+      childFocus: "先穩定英文分享和中文補充，選最熟悉的閱讀、音樂、畫畫或運動題材。",
+      parentFocus: "想清楚你們為何選雙語國際化路線，以及如何看中英文平衡。",
+      checkpoint: "孩子可自然分享一個興趣；家長能清楚講這不是只為英文，而是整體文化選擇。"
+    },
+    {
+      schoolName: "保良局蔡繼有學校",
+      stage: "面試前 20 至 11 日",
+      childFocus: "練語言切換、生活經驗表達，以及『我最近學了甚麼』這類題目。",
+      parentFocus: "練如何把女兒多元興趣連回全人發展，而不是變成獎項清單。",
+      checkpoint: "孩子講興趣時內容更完整；家長講孩子時不再只是堆活動。"
+    },
+    {
+      schoolName: "保良局蔡繼有學校",
+      stage: "面試前 10 日內",
+      childFocus: "維持自然節奏和自信，不再過量操練雙語稿。",
+      parentFocus: "重溫家庭語言觀、教育理念和 logistics。",
+      checkpoint: "孩子講英文和中文都保持自然；家長對文化匹配的表達已很穩。"
+    }
+  ],
   homePracticeActivities: [
     {
       schoolGroup: "陳守仁 / 通用",
