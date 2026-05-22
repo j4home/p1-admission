@@ -68,6 +68,7 @@
     weeklyPracticeGrid: document.getElementById("weekly-practice-grid"),
     homePracticeGrid: document.getElementById("home-practice-grid"),
     parentInterviewGrid: document.getElementById("parent-interview-grid"),
+    parentFaqGrid: document.getElementById("parent-faq-grid"),
     strategyAxes: document.getElementById("strategy-axes"),
     findingsList: document.getElementById("findings-list"),
     timelineList: document.getElementById("timeline-list"),
@@ -498,6 +499,24 @@
     });
   }
 
+  function renderParentFaqDrafts() {
+    if (!els.parentFaqGrid || !research.parentFaqDrafts) return;
+    els.parentFaqGrid.innerHTML = "";
+
+    research.parentFaqDrafts.forEach((item) => {
+      const card = document.createElement("article");
+      card.className = "agenda-card";
+      card.innerHTML = `
+        <p class="section-kicker">${item.schoolName}</p>
+        <h3>${item.question}</h3>
+        <p><strong>口語化草稿：</strong>${item.draftAnswer}</p>
+        <p><strong>回答重點：</strong>${item.answerNote}</p>
+        <p><strong>語氣提醒：</strong>${item.toneReminder}</p>
+      `;
+      els.parentFaqGrid.appendChild(card);
+    });
+  }
+
   function renderChildProfile() {
     if (!els.childProfileGrid || !research.familyContext?.childProfile) return;
     els.childProfileGrid.innerHTML = "";
@@ -870,6 +889,7 @@
   renderWeeklyPracticePlan();
   renderHomePracticeActivities();
   renderParentInterviewPrep();
+  renderParentFaqDrafts();
   initFilters();
   bindFilters();
   renderPriorityLists();
