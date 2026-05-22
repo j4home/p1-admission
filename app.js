@@ -67,6 +67,7 @@
     coreInterviewGrid: document.getElementById("core-interview-grid"),
     weeklyPracticeGrid: document.getElementById("weekly-practice-grid"),
     homePracticeGrid: document.getElementById("home-practice-grid"),
+    parentInterviewGrid: document.getElementById("parent-interview-grid"),
     strategyAxes: document.getElementById("strategy-axes"),
     findingsList: document.getElementById("findings-list"),
     timelineList: document.getElementById("timeline-list"),
@@ -477,6 +478,26 @@
     });
   }
 
+  function renderParentInterviewPrep() {
+    if (!els.parentInterviewGrid || !research.parentInterviewPrep) return;
+    els.parentInterviewGrid.innerHTML = "";
+
+    research.parentInterviewPrep.forEach((item) => {
+      const card = document.createElement("article");
+      card.className = "agenda-card";
+      card.innerHTML = `
+        <p class="section-kicker">${item.routeType}</p>
+        <h3>${item.schoolName}</h3>
+        <p><strong>常見家長題目：</strong>${item.likelyQuestions.join(" / ")}</p>
+        <p><strong>家長主線：</strong>${item.parentAngle}</p>
+        <p><strong>可怎樣講你女兒：</strong>${item.fitStory}</p>
+        <p><strong>避免只這樣講：</strong>${item.avoid}</p>
+        <p><strong>一句帶走：</strong>${item.takeaway}</p>
+      `;
+      els.parentInterviewGrid.appendChild(card);
+    });
+  }
+
   function renderChildProfile() {
     if (!els.childProfileGrid || !research.familyContext?.childProfile) return;
     els.childProfileGrid.innerHTML = "";
@@ -848,6 +869,7 @@
   renderCoreInterviewPlan();
   renderWeeklyPracticePlan();
   renderHomePracticeActivities();
+  renderParentInterviewPrep();
   initFilters();
   bindFilters();
   renderPriorityLists();
